@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     
-    <title>Bienvenidos a mi blog</title>
+    <title>Instalando Ghost en local y en un Mac</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -16,11 +16,11 @@
     <meta name="description" content="">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Bienvenidos a mi blog">
+    <meta name="twitter:title" content="Instalando Ghost en local y en un Mac">
     <meta name="twitter:description" content="">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Bienvenidos a mi blog">
+    <meta property="og:title" content="Instalando Ghost en local y en un Mac">
     <meta property="og:description" content="">
 
     <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
@@ -32,7 +32,7 @@
     
     <meta name="generator" content="Ghost 0.4" />
 <link rel="alternate" type="application/rss+xml" title="José López" href="../rss/index.html">
-<link rel="canonical" href="http://www.jose.ga/bienvenidos-a-mi-blog/" />
+<link rel="canonical" href="http://www.jose.ga/instalando-ghost-en-local-en-un-mac/" />
 
 </head>
 <body class="post-template tag-ghost-tag-2 no-js">
@@ -118,16 +118,32 @@
 
     <header class="post-header">
       <div class="post-meta">
-        <time datetime="02 May 2014" class="post-meta__date date">02 May 2014</time> &#8226; <span class="post-meta__tags tags">on <a href="../tag/ghost-tag-2/index.html">Ghost</a></span>
+        <time datetime="14 Dec 2014" class="post-meta__date date">14 Dec 2014</time> &#8226; <span class="post-meta__tags tags">on <a href="../tag/ghost-tag-2/index.html">Ghost</a></span>
         <!--<span class="post-meta__author author"><img src="" alt="profile image for jose" class="avatar post-meta__avatar" /> by jose</span>-->
       </div>
-      <h1 class="post-title">Bienvenidos a mi blog</h1>
+      <h1 class="post-title">Instalando Ghost en local y en un Mac</h1>
     </header>
 
     <section class="post tag-ghost-tag-2">
-      <p>Este es mi blog personal creado con <a href="http://ghost.org">Ghost</a> en local, generado en estático con <a href="https://github.com/axitkhurana/buster">Buster</a> y alojado en <a href="http://pages.github.com/">GitHub Pages</a>.</p>
+      <p>Lo primero que haremos es dirigirnos a la web oficial <a href="https://ghost.org/">ghost.org</a> y <a href="https://ghost.org/download/">descargar</a> la versión más reciente. El archivo en cuestión se trata de un archivo comprimido que una vez descargado, descomprimiremos y lo pondremos, por ejemplo en la raíz del disco duro.</p>
 
-<p>Ya había tenido un acercamiento a Ghost con un blog que cree hace tiempo y que aloje en una Raspberry Pi y la experiencia me encantó. Estuve mirando algun hosting gratuito con node.js para mi blog personal pero al no encontrar nada me he decidido a crearlo y generarlo estaticamente en local para después subirlo a GitHub Pages donde queda redirecionado a mi propio dominio :-)</p>
+<p>A través del terminal no dirigimos a esa ubicación.</p>
+
+<p><code>cd ghost</code></p>
+
+<p>Procederemos a instalarlo.</p>
+
+<p><code>npm install --production</code></p>
+
+<p>Después lo arrancaremos, ya en local.</p>
+
+<p><code>npm start</code></p>
+
+<p>Nos indicará que ya está operativo en la dirección <strong>127.0.0.1:2368</strong> </p>
+
+<p>Lo primero que haremos será crear una cuenta de administrador (<strong>127.0.0.1:2368/admin</strong>) y ya podemos empezar a bloguear en local …</p>
+
+<p><img src="../content/images/2014/Dec/ghost.png" alt="" /></p>
     </section>
 
   </article>
