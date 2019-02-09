@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Instalacion de Octoprint-TFT</title>
+    <title>Instalación de Octoprint-TFT</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -15,11 +15,11 @@
     <meta name="description" content="">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Instalacion de Octoprint-TFT">
+    <meta name="twitter:title" content="Instalación de Octoprint-TFT">
     <meta name="twitter:description" content="">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Instalacion de Octoprint-TFT">
+    <meta property="og:title" content="Instalación de Octoprint-TFT">
     <meta property="og:description" content="">
 
     <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
@@ -31,18 +31,18 @@
     
     <meta property="og:site_name" content="José López" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Instalacion de Octoprint-TFT" />
+    <meta property="og:title" content="Instalación de Octoprint-TFT" />
     <meta property="og:description" content="Octoprint-TFT es una interfaz táctil OctoPrint para módulos táctiles TFT basados en GTK + 3 que nos sirve para controlar nuestra impresora 3D. Voy a explicar los pasos que he seguido para instalar Octoprint-TFT en una raspberry pi 2 y una..." />
     <meta property="og:url" content="http://www.jose.ga/instalacion-de-octoprint-tft/" />
     <meta property="og:image" content="http://www.jose.ga/content/images/2019/02/Dy9nOiFXQAAGnYm-1.jpg" />
     <meta property="article:published_time" content="2019-02-09T12:43:40.246Z" />
-    <meta property="article:modified_time" content="2019-02-09T12:55:00.434Z" />
+    <meta property="article:modified_time" content="2019-02-09T13:26:17.649Z" />
     <meta property="article:tag" content="Raspberry" />
     <meta property="article:tag" content="Impresión3D" />
     <meta property="article:tag" content="Octoprint-TFT" />
     
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Instalacion de Octoprint-TFT" />
+    <meta name="twitter:title" content="Instalación de Octoprint-TFT" />
     <meta name="twitter:description" content="Octoprint-TFT es una interfaz táctil OctoPrint para módulos táctiles TFT basados en GTK + 3 que nos sirve para controlar nuestra impresora 3D. Voy a explicar los pasos que he seguido para instalar Octoprint-TFT en una raspberry pi 2 y una..." />
     <meta name="twitter:url" content="http://www.jose.ga/instalacion-de-octoprint-tft/" />
     <meta name="twitter:image:src" content="http://www.jose.ga/content/images/2019/02/Dy9nOiFXQAAGnYm-1.jpg" />
@@ -59,10 +59,10 @@
         "url": "http://www.jose.ga/author/jose",
         "sameAs": "http://jose.ga"
     },
-    "headline": "Instalacion de Octoprint-TFT",
+    "headline": "Instalación de Octoprint-TFT",
     "url": "http://www.jose.ga/instalacion-de-octoprint-tft/",
     "datePublished": "2019-02-09T12:43:40.246Z",
-    "dateModified": "2019-02-09T12:55:00.434Z",
+    "dateModified": "2019-02-09T13:26:17.649Z",
     "image": "http://www.jose.ga/content/images/2019/02/Dy9nOiFXQAAGnYm-1.jpg",
     "keywords": "Raspberry, Impresión3D, Octoprint-TFT",
     "description": "Octoprint-TFT es una interfaz táctil OctoPrint para módulos táctiles TFT basados en GTK + 3 que nos sirve para controlar nuestra impresora 3D. Voy a explicar los pasos que he seguido para instalar Octoprint-TFT en una raspberry pi 2 y una..."
@@ -152,7 +152,7 @@
         <time datetime="09 Feb 2019" class="post-meta__date date">09 Feb 2019</time> &#8226; <span class="post-meta__tags tags">on <a href="../tag/raspberry/index.html">Raspberry</a>, <a href="../tag/impresion3d/index.html">Impresión3D</a>, <a href="../tag/octoprint-tft/index.html">Octoprint-TFT</a></span>
         <!--<span class="post-meta__author author"><img src="/content/images/2014/12/photopepe.png" alt="profile image for jose" class="avatar post-meta__avatar" /> by jose</span>-->
       </div>
-      <h2 class="post-title">Instalacion de Octoprint-TFT</h2>
+      <h2 class="post-title">Instalación de Octoprint-TFT</h2>
     </header>
 
     <section class="post tag-raspberry tag-impresion3d tag-octoprint-tft">
@@ -164,14 +164,13 @@
 
 <h5 id="1instalacindedriversdelapantalladesdessh">1) Instalación de drivers de la pantalla desde SSH:</h5>
 
-<p>Para que la pantalla funcione en la Rpi con nuestro octoprint, debemos conectarnos vía ssh a través del terminal de nuestro ordenador e introducir los siguientes comandos.  </p>
+<p>Para que la pantalla funcione en la Rpi con nuestro octoprint, debemos conectarnos vía ssh a través del terminal de nuestro ordenador e introducir los siguientes comandos.</p>
 
-<pre><code>wget https://www.waveshare.com/w/upload/1/1e/LCD-show-180817.tar.gz  
-tar xvf LCD-show-180817.tar.gz  
-cd LCD-show/  
-chmod +x LCD35-show  
-./LCD35-show
-</code></pre>
+<p><code>wget https://www.waveshare.com/w/upload/1/1e/LCD-show-180817.tar.gz</code><br>
+<code>tar xvf LCD-show-180817.tar.gz</code><br>
+<code>cd LCD-show/</code><br>
+<code>chmod +x LCD35-show</code><br>
+<code>./LCD35-show</code><br></p>
 
 <p>La Rpi se reiniciara y nos aparecerá la consola por la pantalla.</p>
 
@@ -184,15 +183,13 @@ chmod +x LCD35-show
 <code>sudo mv /usr/share/X11/xorg.conf.d/99-fbturbo.conf ~</code><br>
 <code>sudo nano /lib/systemd/system/octoprint-tft.service</code><br></p>
 
-<p>Cambiamos el valor 0 a 1 en esta linea:  </p>
+<p>Cambiamos el valor 0 a 1 en esta linea:</p>
 
-<pre><code>ExecStart=/usr/bin/xinit /usr/bin/OctoPrint-TFT -- :0 -nolisten tcp -nocursor  
-</code></pre>
+<p><code>ExecStart=/usr/bin/xinit /usr/bin/OctoPrint-TFT -- :0 -nolisten tcp -nocursor</code></p>
 
-<p>a  </p>
+<p>a</p>
 
-<pre><code>ExecStart=/usr/bin/xinit /usr/bin/OctoPrint-TFT -- :1 -nolisten tcp -nocursor  
-</code></pre>
+<p><code>ExecStart=/usr/bin/xinit /usr/bin/OctoPrint-TFT -- :1 -nolisten tcp -nocursor</code></p>
 
 <p>Grabamos el archivo, pulsando CTRL+X y confirmamos tecleando Y, para guardarlo. <br />
 Ya tendremos lista nuestra pantalla TFT con control táctil.</p>
@@ -205,22 +202,20 @@ Ya tendremos lista nuestra pantalla TFT con control táctil.</p>
 
 <h5 id="rotarpantallaraspberrypi">Rotar pantalla Raspberry Pi</h5>
 
-<pre><code>sudo nano /boot/config.txt  
-</code></pre>
+<p><code>sudo nano /boot/config.txt</code></p>
 
 <p>poner como última línea </p>
 
-<pre><code>display_rotate=2  
-</code></pre>
+<p><code>display_rotate=2</code></p>
 
-<pre><code>sudo nano /usr/share/X11/xorg.conf.d/99-callibration.conf  
-</code></pre>
+<p>después </p>
 
-<p>y añadir estas dos líneas  </p>
+<p><code>sudo nano /usr/share/X11/xorg.conf.d/99-callibration.conf</code> </p>
 
-<pre><code>Option “InvertX” “true”  
-Option “InvertY” “true”  
-</code></pre>
+<p>y añadir estas dos líneas</p>
+
+<p><code>Option “InvertX” “true”</code>
+<code>Option “InvertY” “true”</code></p>
     </section>
 
   </article>
