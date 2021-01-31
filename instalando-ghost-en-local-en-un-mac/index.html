@@ -1,467 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<link rel="icon" href="/jekyll-theme-memoirs/assets/images/logo.png">
+    <title>Instalando Ghost en local y en un Mac</title>
 
-<title>Instalando Ghost en local y en un Mac | José</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Instalando Ghost en local y en un Mac | José</title>
-<meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Instalando Ghost en local y en un Mac" />
-<meta name="author" content="jose" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Lo primero que haremos es dirigirnos a la web oficial ghost.org y descargar la versión más reciente. El archivo en cuestión se trata de un archivo comprimido que una vez descargado, descomprimiremos y lo pondremos, por ejemplo en la raíz del disco duro." />
-<meta property="og:description" content="Lo primero que haremos es dirigirnos a la web oficial ghost.org y descargar la versión más reciente. El archivo en cuestión se trata de un archivo comprimido que una vez descargado, descomprimiremos y lo pondremos, por ejemplo en la raíz del disco duro." />
-<meta property="og:site_name" content="José" />
-<meta property="og:image" content="/jekyll-theme-memoirs/assets/images/ghost_cms.png" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2014-12-14T00:00:00+01:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="/jekyll-theme-memoirs/assets/images/ghost_cms.png" />
-<meta property="twitter:title" content="Instalando Ghost en local y en un Mac" />
-<script type="application/ld+json">
-{"@type":"BlogPosting","url":"/jekyll-theme-memoirs/instalando-ghost-en-local-en-un-mac/","image":"/jekyll-theme-memoirs/assets/images/ghost_cms.png","headline":"Instalando Ghost en local y en un Mac","dateModified":"2014-12-14T00:00:00+01:00","datePublished":"2014-12-14T00:00:00+01:00","author":{"@type":"Person","name":"jose"},"mainEntityOfPage":{"@type":"WebPage","@id":"/jekyll-theme-memoirs/instalando-ghost-en-local-en-un-mac/"},"description":"Lo primero que haremos es dirigirnos a la web oficial ghost.org y descargar la versión más reciente. El archivo en cuestión se trata de un archivo comprimido que una vez descargado, descomprimiremos y lo pondremos, por ejemplo en la raíz del disco duro.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/jekyll-theme-memoirs/assets/images/logo.png"},"name":"jose"},"@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+    <meta name="description" content="">
 
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Instalando Ghost en local y en un Mac">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Instalando Ghost en local y en un Mac">
+    <meta property="og:description" content="">
+
+    <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="http://127.0.0.1:2368/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/uno.css?v=1de74e8441" />
+
+    <link rel="canonical" href="http://www.jose.ga/instalando-ghost-en-local-en-un-mac/" />
     
-<link href="/jekyll-theme-memoirs/assets/css/prism.css" rel="stylesheet">
+    <meta property="og:site_name" content="José López" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Instalando Ghost en local y en un Mac" />
+    <meta property="og:description" content="Lo primero que haremos es dirigirnos a la web oficial ghost.org y descargar la versión más reciente. El archivo en cuestión se trata de un archivo comprimido que una vez descargado, descomprimiremos y lo pondremos, por ejemplo en la..." />
+    <meta property="og:url" content="http://www.jose.ga/instalando-ghost-en-local-en-un-mac/" />
+    <meta property="article:published_time" content="2014-12-14T16:26:58.450Z" />
+    <meta property="article:modified_time" content="2014-12-14T16:28:12.649Z" />
+    <meta property="article:tag" content="Ghost" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Instalando Ghost en local y en un Mac" />
+    <meta name="twitter:description" content="Lo primero que haremos es dirigirnos a la web oficial ghost.org y descargar la versión más reciente. El archivo en cuestión se trata de un archivo comprimido que una vez descargado, descomprimiremos y lo pondremos, por ejemplo en la..." />
+    <meta name="twitter:url" content="http://www.jose.ga/instalando-ghost-en-local-en-un-mac/" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "José López",
+    "author": {
+        "@type": "Person",
+        "name": "jose",
+        "image": "http://www.jose.ga/content/images/2014/12/photopepe.png",
+        "url": "http://www.jose.ga/author/jose",
+        "sameAs": "http://jose.ga"
+    },
+    "headline": "Instalando Ghost en local y en un Mac",
+    "url": "http://www.jose.ga/instalando-ghost-en-local-en-un-mac/",
+    "datePublished": "2014-12-14T16:26:58.450Z",
+    "dateModified": "2014-12-14T16:28:12.649Z",
+    "keywords": "Ghost",
+    "description": "Lo primero que haremos es dirigirnos a la web oficial ghost.org y descargar la versión más reciente. El archivo en cuestión se trata de un archivo comprimido que una vez descargado, descomprimiremos y lo pondremos, por ejemplo en la..."
+}
+    </script>
 
-<link href="/jekyll-theme-memoirs/assets/css/theme.css" rel="stylesheet">
-
-<script src="/jekyll-theme-memoirs/assets/js/jquery.min.js"></script>
+    <meta name="generator" content="Ghost 0.5" />
+    <link rel="alternate" type="application/rss+xml" title="José López" href="http://www.jose.ga/rss/" />
 
 </head>
+<body class="post-template tag-ghost-tag-2 no-js">
 
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
 
-
-
-<body>
-	<!-- defer loading of font and font awesome -->
-	<noscript id="deferred-styles">
-		<link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	</noscript>
-
-<!-- Begin Sidebar Navigation
-================================================== -->
-
-<div class="sidebar">    
-</div>   
-<div class="nav-icon">
-    <div class="hamburger-bar"></div>
-</div>
-<div id="blackover-nav" class="blackover"></div>
-<nav id="menu">
-    <ul>
-        <h3>Navigation</h3>
-        <li><a href="/jekyll-theme-memoirs/">Home</a></li>
-        <li><a href="/jekyll-theme-memoirs/about">About <span class="badge badge-primary">Acerca de mí</span></a></li>
+    <header class="panel-cover panel-cover--collapsed" >
+      <div class="panel-main">
+    
+        <div class="panel-main__inner panel-inverted">
+        <div class="panel-main__content">
+    
+            <a href="http://www.jose.ga" title="link to homepage for José López"><img src="../content/images/2014/Apr/photopepe.png" width="80" alt="José López logo" class="panel-cover__logo logo" /></a>
+            <h1 class="panel-cover__title panel-title"><a href="http://www.jose.ga" title="link to homepage for José López">José López</a></h1>
+            <span class="panel-cover__subtitle panel-subtitle">Visual Designer</span> 
+            <hr class="panel-cover__divider" />
+            <p class="panel-cover__description">Pasión geek</p>
+            <hr class="panel-cover__divider panel-cover__divider--secondary" />
+    
+            <div class="navigation-wrapper">
+    
+              <nav class="cover-navigation cover-navigation--primary">
+                <ul class="navigation">
+                  <li class="navigation__item"><a href="../index.html#blog" title="link to José López blog" class="blog-button">Blog</a></li>
+                </ul>
+              </nav>
+    
+              
+              <nav class="cover-navigation navigation--social">
+                <ul class="navigation">
+              
+              
+                <!-- Twitter -->
+                <li class="navigation__item">
+                  <a href="http://twitter.com/joselopez_ga" title="@JoseLopez en Twitter">
+                    <i class='icon icon-social-twitter'></i>
+                    <span class="label">Twitter</span>
+                  </a>
+                </li>
+              
+                  <!-- Dribbble -->
+                  <li class="navigation__item">
+                    <a href="http://instagram.com/jose.ga" title="José López en Instagram">
+                      <i class='icon icon-social-instagram'></i>
+                      <span class="label">Dribbble</span>
+                    </a>
+                  </li>
+              
+                  <!-- Email -->
+                  <li class="navigation__item">
+                    <a href="mailto:contacto@jose.ga" title="Email contacto@jose.ga">
+                      <i class='icon icon-mail'></i>
+                      <span class="label">Email</span>
+                    </a>
+                  </li>
+              
+                </ul>
+              </nav>
+            </div>
+    
+          </div>
+    
+        </div>
+    
+        <div class="panel-cover--overlay cover-aqua"></div>
+      </div>
+    </header>/
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
             
-        <li><a href="/jekyll-theme-memoirs/contact">Contacto</a></li>       
-    </ul>   
-</nav>
 
-<script src="/jekyll-theme-memoirs/assets/js/lunr.js"></script>
+  <article class="post-container post-container--single">
 
-<style>
-    
-</style>
+    <header class="post-header">
+      <div class="post-meta">
+        <time datetime="14 Dec 2014" class="post-meta__date date">14 Dec 2014</time> &#8226; <span class="post-meta__tags tags">on <a href="../tag/ghost-tag-2/index.html">Ghost</a></span>
+        <!--<span class="post-meta__author author"><img src="/content/images/2014/12/photopepe.png" alt="profile image for jose" class="avatar post-meta__avatar" /> by jose</span>-->
+      </div>
+      <h2 class="post-title">Instalando Ghost en local y en un Mac</h2>
+    </header>
 
-<div class="wrap-search">
-    <div class="d-flex align-items-center ml-auto">
-        <i class="fas fa-search show-search"></i>
-        <form class="bd-search ml-3" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
-            <input type="text" class="form-control bigradius text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
-        </form>
-    </div>
-</div>
-
-<div id="lunrsearchresults">
-    <ul></ul>
-</div>
-
-<script src="/jekyll-theme-memoirs/assets/js/lunrsearchengine.js"></script>
-
-
-<!-- End Sidebar Navigation
-================================================== -->
-
-<div class="site-content ">
-
-<div class="container">
-
-    <!-- Site Logo/Name
-    ================================================== -->
-   
-    <a class="navbar-brand" href="/jekyll-theme-memoirs/">
-        <img src="/jekyll-theme-memoirs/assets/images/logo.png" alt="José">
-    </a>  
-   
-
-    <!-- Site Tag
-    ================================================== -->
-    
-
-    <!-- Content
-    ================================================== -->
-    <div class="main-content">
-        <div class="entry-header">
-    <!-- Post Title -->
-    <h1 class="posttitle">Instalando Ghost en local y en un Mac</h1>
-    <!-- Author & Date  Box -->
-    
-    
-    <div class="d-flex align-items-center mt-4">
-        <div>
-            
-            <img class="author-thumb" src="/jekyll-theme-memoirs/assets/images/avatar.png" alt="José">
-            
-        </div>            
-        <div>
-        Written by <a target="_blank" class="text-dark" href="https://www.jose.ga">José</a> on 
-        <span class="post-date"><time class="post-date" datetime="2014-12-14">14 Dec 2014</time></span>           
-        
-        </div>            
-    </div>
-    
-</div>
-
-<!-- Adsense under title if enabled from _config.yml (change your pub id and slot) -->
-
-
-<!-- Featured Image -->
-
-<div class="entry-featured-image">
-    
-    <img class="featured-image " src="/jekyll-theme-memoirs/assets/images/ghost_cms.png" alt="Instalando Ghost en local y en un Mac">
-    
-</div>
-
-
-<!-- Content -->
-<!-- Post, Page Content
-================================================== -->
-<div class="article-post">
-    <!-- Toc if any -->
-    
-    <!-- End Toc -->
-    <p>Lo primero que haremos es dirigirnos a la web oficial <a href="https://ghost.org/">ghost.org</a> y <a href="https://ghost.org/download/">descargar</a> la versión más reciente. El archivo en cuestión se trata de un archivo comprimido que una vez descargado, descomprimiremos y lo pondremos, por ejemplo en la raíz del disco duro.</p>
+    <section class="post tag-ghost-tag-2">
+      <p>Lo primero que haremos es dirigirnos a la web oficial <a href="https://ghost.org/">ghost.org</a> y <a href="https://ghost.org/download/">descargar</a> la versión más reciente. El archivo en cuestión se trata de un archivo comprimido que una vez descargado, descomprimiremos y lo pondremos, por ejemplo en la raíz del disco duro.</p>
 
 <p>A través del terminal no dirigimos a esa ubicación.</p>
-<pre><code class="language-md">cd ghost
-</code></pre>
+
+<p><code>cd ghost</code></p>
+
 <p>Procederemos a instalarlo.</p>
-<pre><code class="language-md">npm install --production
-</code></pre>
+
+<p><code>npm install --production</code></p>
+
 <p>Después lo arrancaremos, ya en local.</p>
-<pre><code class="language-md">npm start
-</code></pre>
-<p>Nos indicará que ya está operativo en la dirección <strong>127.0.0.1:2368</strong></p>
+
+<p><code>npm start</code></p>
+
+<p>Nos indicará que ya está operativo en la dirección <strong>127.0.0.1:2368</strong> </p>
 
 <p>Lo primero que haremos será crear una cuenta de administrador (<strong>127.0.0.1:2368/admin</strong>) y ya podemos empezar a bloguear en local …</p>
 
+<p><img src="../content/images/2014/Dec/ghost.png" alt="" /></p>
+    </section>
 
-</div>
-
-<!-- Rating -->
-
-
-<!-- Author Box if enabled from _config.yml -->
-<!-- Author Box -->
+  </article>
 
 
 
 
-<!-- Comments if not disabled with comments: false -->
-<!-- Comments
-================================================== -->
- 
-<div class="comments">
-    <button class="btn btn-dark show-comments">Load Comments</button>         
-    <div id="comments">  
-        <h4 class="mb-4">Comments</h4>                 
-            <section class="disqus">
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        var disqus_shortname = ''; 
-        var disqus_developer = 0;
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</section>
-     
-    <div class="clearfix"></div>              
-    </div>    
-</div>       
-
-
-<!-- Share -->
-<div class="share">
-    <p>
-        Share
-    </p>
-    <ul>
-        <li class="ml-1 mr-1">
-            <a target="_blank" href="https://twitter.com/intent/tweet?text=Instalando Ghost en local y en un Mac&url=/jekyll-theme-memoirs/instalando-ghost-en-local-en-un-mac/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                <i class="fab fa-twitter"></i>
-            </a>
-        </li>
-
-        <li class="ml-1 mr-1">
-            <a target="_blank" href="https://facebook.com/sharer.php?u=/jekyll-theme-memoirs/instalando-ghost-en-local-en-un-mac/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-        </li>
-
-        <li class="ml-1 mr-1">
-            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=/jekyll-theme-memoirs/instalando-ghost-en-local-en-un-mac/" onclick="window.open(this.href, 'width=550,height=435');return false;">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-        </li>
-
-    </ul>
-</div>
-
-
-<!-- Related Post -->
-<!-- Related Posts
-================================================== -->
-<div class=" related-posts ">  
-
-    
-    <h2 class="text-center mb-4">Explore more like this</h2>
-    
-    
-    <div class="d-flex justify-content-center align-items-center">
-    
-    <!-- Categories -->
-    
-    
-    <a class="smoothscroll badge badge-primary text-capitalize" href="/jekyll-theme-memoirs/categories#Ghost">Ghost</a>                
-    
-
-    <!-- Tags -->  
-    
-                    
-    <a class="smoothscroll badge badge-primary text-capitalize" href="/jekyll-theme-memoirs/tags#CMS">CMS</a>               
-    
-
+            <footer class="footer">
+                <span class="footer__copyright">&copy; 2019. All rights reserved.</span>
+                <span class="footer__copyright"><a href="http://uno.daleanthony.com" title="link to page for Uno Ghost theme">Uno theme</a> by <a href="http://daleanthony.com" title="link to website for Dale-Anthony">Dale-Anthony</a></span>
+                <span class="footer__copyright">Proudly published with <a href="http://ghost.org" title="link to Ghost website">Ghost</a></span>
+            </footer>        </div>
     </div>
 
-    
-    
-    
-    <div class="blog-grid-container">
-        
-        
-            
-            
-        
-            
-        
-            
-        
-        
-        
-            
-            
-        
-            
-        
-            
-        
-        
-        
-            
-            
-        
-            
-        
-            
-        
-        
-        
-            
-            
-        
-            
-        
-            
-        
-        
-        
-            
-            
-        
-            
-        
-            
-            <!-- begin post -->
+    <script src="../public/jquery.js?v=1de74e8441"></script>
 
-
-<div class="blog-grid-item">
-    <div class="card h-100">
-        <div class="maxthumb">
-            <a href="/jekyll-theme-memoirs/actualizando-ghost/">
-                
-
-                    
-                        <img class="img-thumb" src="/jekyll-theme-memoirs/assets/images/Ghost.png" alt="Actualizando Ghost"> 
-                    
-
-                
-            </a>
-        </div>
-        <div class="card-body">
-            <h2 class="card-title">
-                <a class="text-dark" href="/jekyll-theme-memoirs/actualizando-ghost/">Actualizando Ghost</a>
-                
-            </h2>
-            <h4 class="card-text">Ha salido una nueva versión de Ghost y queremos actualizar. ¿Qué tenemos que hacer? Pues muy fácil, primero descargaremos la última versión de Ghost y la descomprimiremos. Después subimos el...</h4>
-        </div>
-        <div class="card-footer bg-white">
-            <div class="wrapfooter">
-                
-                <span class="meta-footer-thumb">
-                
-                <img class="author-thumb" src="/jekyll-theme-memoirs/assets/images/avatar.png" alt="José">
-                
-                </span>
-                <span class="author-meta">
-                <span class="post-name"><a target="_blank" href="https://www.jose.ga">José</a></span> 
-                
-                <span class="post-date">22 Dec 2014</span>
-                </span>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- end post -->
-            
-            
-            
-        
-        
-        
-            
-            
-        
-            
-        
-            
-        
-        
-        
-            
-            
-        
-            
-        
-            
-        
-        
-        
-            
-            
-        
-            
-        
-            
-        
-        
-        
-            
-            
-        
-            
-        
-            
-        
-        
-        
-            
-            
-        
-            
-        
-            
-        
-        
-        
-            
-            
-        
-            
-        
-            
-        
-        
-        </div>        
-</div>
-
-<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
-https://search.google.com/structured-data/testing-tool/u/0/
-================================================== -->
-
-    </div>
-
-    
-    <!-- Newsletter
-    ================================================== -->
-    <div class="newsletter text-center">
-        <span class="h4"><img src="/jekyll-theme-memoirs/assets/images/logo.png" class="newsletter-logo" alt="José"> &nbsp; Blog <b>personal</b> en el que documento mis intereses</span>
-       <!-- <form action="" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
-         <!--   <div class="mc-field-group d-inline-flex">
-         <!--   <input type="email" placeholder="Your e-mail" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
-        <!--    <input type="submit" value="Subscribe" name="subscribe" class="heart">
-       <!--     </div>
-       <!-- </form>
-    </div>
-    
-    
-</div>
-
-<!-- Begin Footer
-================================================== -->
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-12 text-center text-lg-left">
-                Copyright © 2021 José 
-            </div>
-            <div class="col-md-6 col-sm-12 text-center text-lg-right">    
-                <a target="_blank" href="https://www.wowthemes.net/memoirs-free-jekyll-theme/">Memoirs Jekyll Theme</a> by WowThemes.net
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- End Footer
-================================================== -->
-
-</div> <!-- /.site-content -->
-
-<!-- Scripts (if you need bootstrap.js, please add it yourself. I didn't use it for performance reasons, it was not needed in this theme)
-================================================== -->
-
-<script src="/jekyll-theme-memoirs/assets/js/prism.js"></script>
-
-<script src="/jekyll-theme-memoirs/assets/js/theme.js"></script>
-
-
-
-
-<script id="dsq-count-scr" src="//.disqus.com/count.js"></script>
-
+    <script type="text/javascript" src="../assets/js/main.js?v=1de74e8441"></script>
 
 </body>
 </html>
