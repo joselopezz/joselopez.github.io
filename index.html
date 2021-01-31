@@ -1,170 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+---
+layout: default
+title: Home
+---
 
-    <title>José López</title>
+<!-- Posts Index
+================================================== -->
+<div class="blog-grid-container">
+    {% for post in paginator.posts %}
+        {% include postbox.html %}
+    {% endfor %}
+</div>
 
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- Pagination
+================================================== -->
+<div class="bottompagination">
+<span class="navigation" role="navigation">
+    {% include pagination.html %}
+</span>
+</div>
 
-    <meta name="description" content="Pasión geek">
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="José López">
-    <meta name="twitter:description" content="Pasión geek">
-
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="José López">
-    <meta property="og:description" content="Pasión geek">
-
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link href="http://127.0.0.1:2368/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
-
-    <link rel="stylesheet" type="text/css" href="assets/css/uno.css?v=1de74e8441" />
-
-    <link rel="canonical" href="http://www.jose.ga/" />
-    <link rel="next" href="http://www.jose.ga/page/2/" />
-    <meta name="generator" content="Ghost 0.5" />
-    <link rel="alternate" type="application/rss+xml" title="José López" href="http://www.jose.ga/rss/" />
-
-</head>
-<body class="home-template no-js">
-
-    <span class="mobile btn-mobile-menu">
-        <i class="icon icon-list btn-mobile-menu__icon"></i>
-        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
-    </span>
-
-    <header class="panel-cover " >
-      <div class="panel-main">
-    
-        <div class="panel-main__inner panel-inverted">
-        <div class="panel-main__content">
-    
-            <a href="http://www.jose.ga" title="link to homepage for José López"><img src="content/images/2014/Apr/photopepe.png" width="80" alt="José López logo" class="panel-cover__logo logo" /></a>
-            <h1 class="panel-cover__title panel-title"><a href="http://www.jose.ga" title="link to homepage for José López">José López</a></h1>
-            <span class="panel-cover__subtitle panel-subtitle">Visual Designer</span> 
-            <hr class="panel-cover__divider" />
-            <p class="panel-cover__description">Pasión geek</p>
-            <hr class="panel-cover__divider panel-cover__divider--secondary" />
-    
-            <div class="navigation-wrapper">
-    
-              <nav class="cover-navigation cover-navigation--primary">
-                <ul class="navigation">
-                  <li class="navigation__item"><a href="index.html#blog" title="link to José López blog" class="blog-button">Blog</a></li>
-                </ul>
-              </nav>
-    
-              
-              <nav class="cover-navigation navigation--social">
-                <ul class="navigation">
-              
-              
-                <!-- Twitter -->
-                <li class="navigation__item">
-                  <a href="http://twitter.com/joselopez_ga" title="@JoseLopez en Twitter">
-                    <i class='icon icon-social-twitter'></i>
-                    <span class="label">Twitter</span>
-                  </a>
-                </li>
-              
-                  <!-- Dribbble -->
-                  <li class="navigation__item">
-                    <a href="http://instagram.com/jose.ga" title="José López en Instagram">
-                      <i class='icon icon-social-instagram'></i>
-                      <span class="label">Dribbble</span>
-                    </a>
-                  </li>
-              
-                  <!-- Email -->
-                  <li class="navigation__item">
-                    <a href="mailto:contacto@jose.ga" title="Email contacto@jose.ga">
-                      <i class='icon icon-mail'></i>
-                      <span class="label">Email</span>
-                    </a>
-                  </li>
-              
-                </ul>
-              </nav>
-            </div>
-    
-          </div>
-    
-        </div>
-    
-        <div class="panel-cover--overlay cover-aqua"></div>
-      </div>
-    </header>/
-    <div class="content-wrapper">
-        <div class="content-wrapper__inner">
-            
-  <div class="main-post-list">
-
-    <ol class="post-list">
-      <li>
-        <h2 class="post-list__post-title post-title"><a href="instalacion-de-octoprint-tft/index.html" title="link to Instalación de Octoprint-TFT">Instalación de Octoprint-TFT</a></h2>
-        <p class="excerpt">Octoprint-TFT es una interfaz táctil OctoPrint para módulos táctiles TFT basados en GTK + 3 que nos sirve para controlar nuestra impresora 3D. Voy a explicar los pasos que he seguido para instalar Octoprint-TFT en una raspberry pi 2 y una pantalla tft de 3.5". Partiendo del punto en el&hellip;</p>
-        <div class="post-list__meta"><time datetime="09 Feb 2019" class="post-list__meta--date date">09 Feb 2019</time> &#8226; <span class="post-list__meta--tags tags">on <a href="tag/raspberry/index.html">Raspberry</a>, <a href="tag/impresion3d/index.html">Impresión3D</a>, <a href="tag/octoprint-tft/index.html">Octoprint-TFT</a></span></div>
-        <hr class="post-list__divider" />
-      </li>
-      <li>
-        <h2 class="post-list__post-title post-title"><a href="instalar-octoprint-en-una-raspberry-pi-desde-macos/index.html" title="link to Instalar OctoPrint en una Raspberry Pi desde MacOs">Instalar OctoPrint en una Raspberry Pi desde MacOs</a></h2>
-        <p class="excerpt">Instalar el servidor de impresión 3D OctoPrint en una Raspberry Pi desde el entorno MacOs es muy fácil. Primero de todo, descargaremos la última versión de Octoprint desde la web oficial. El fichero descargado viene comprimido en un zip. No es necesario descomprimirlo. Para quemar la imagen usaremos el programa&hellip;</p>
-        <div class="post-list__meta"><time datetime="11 Apr 2018" class="post-list__meta--date date">11 Apr 2018</time> &#8226; <span class="post-list__meta--tags tags">on <a href="tag/raspberry/index.html">Raspberry</a>, <a href="tag/impresion3d/index.html">Impresión3D</a></span></div>
-        <hr class="post-list__divider" />
-      </li>
-      <li>
-        <h2 class="post-list__post-title post-title"><a href="como-eliminar-la-cache-de-twitter/index.html" title="link to Cómo eliminar la cache de Twitter">Cómo eliminar la cache de Twitter</a></h2>
-        <p class="excerpt">Si alguna vez has compartido una url en twitter y te has dado cuenta a posteriori de la existencia de algún error en el mismo, bien en el titulo o  en el contenido, te darás cuenta que aunque lo corrijas, al estar cacheado en Twitter, se seguirá compartiendo con el&hellip;</p>
-        <div class="post-list__meta"><time datetime="26 Oct 2017" class="post-list__meta--date date">26 Oct 2017</time> &#8226; <span class="post-list__meta--tags tags">on <a href="tag/twitter/index.html">Twitter</a></span></div>
-        <hr class="post-list__divider" />
-      </li>
-      <li>
-        <h2 class="post-list__post-title post-title"><a href="probando-acdisplay/index.html" title="link to Probando AcDisplay">Probando AcDisplay</a></h2>
-        <p class="excerpt">He probado la app AcDisplay en mi Xiaomi MI 3 y me ha encantado su diseño que es agradable y minimalista.  Esta app nos permite gestionar de un modo diferente  las notificaciones en nuestro movil Android. Las notificaciones que recibimos nos aparecen en  la pantalla de bloqueo. Entre sus características&hellip;</p>
-        <div class="post-list__meta"><time datetime="23 Jan 2015" class="post-list__meta--date date">23 Jan 2015</time> &#8226; <span class="post-list__meta--tags tags">on <a href="tag/app-tag/index.html">App</a>, <a href="tag/android/index.html">Android</a></span></div>
-        <hr class="post-list__divider" />
-      </li>
-      <li>
-        <h2 class="post-list__post-title post-title"><a href="actualizando-ghost/index.html" title="link to Actualizando Ghost">Actualizando Ghost</a></h2>
-        <p class="excerpt">Ha salido una nueva versión de Ghost y queremos actualizar. ¿Qué tenemos que hacer? Pues   muy fácil,  primero descargaremos la última versión de Ghost y la descomprimiremos. Después subimos el contenido al servidor donde tenemos alojado nuestro blog y sustituiremos los archivos. Lo único que no vamos a subir es&hellip;</p>
-        <div class="post-list__meta"><time datetime="22 Dec 2014" class="post-list__meta--date date">22 Dec 2014</time> &#8226; <span class="post-list__meta--tags tags">on <a href="tag/ghost-tag-2/index.html">Ghost</a></span></div>
-        <hr class="post-list__divider" />
-      </li>
-      <li>
-        <h2 class="post-list__post-title post-title"><a href="instalando-ghost-en-local-en-un-mac/index.html" title="link to Instalando Ghost en local y en un Mac">Instalando Ghost en local y en un Mac</a></h2>
-        <p class="excerpt">Lo primero que haremos es dirigirnos a la web oficial ghost.org y descargar la versión más reciente. El archivo en cuestión se trata de un archivo comprimido que una vez descargado, descomprimiremos y lo pondremos, por ejemplo en la raíz del disco duro. A través del terminal no dirigimos&hellip;</p>
-        <div class="post-list__meta"><time datetime="14 Dec 2014" class="post-list__meta--date date">14 Dec 2014</time> &#8226; <span class="post-list__meta--tags tags">on <a href="tag/ghost-tag-2/index.html">Ghost</a></span></div>
-        <hr class="post-list__divider" />
-      </li>
-    </ol>
-
-    <hr class="post-list__divider " />
-
-<nav class="pagination" role="navigation">
-    <span class="pagination__page-number">Page 1 of 3</span>
-        <a class="older-posts pagination__older btn btn-small btn-tertiary" href="page/2/index.html#blog">Older Posts &rarr;</a>
-</nav>
-
-
-  </div>
-
-            <footer class="footer">
-                <span class="footer__copyright">&copy; 2019. All rights reserved.</span>
-                <span class="footer__copyright"><a href="http://uno.daleanthony.com" title="link to page for Uno Ghost theme">Uno theme</a> by <a href="http://daleanthony.com" title="link to website for Dale-Anthony">Dale-Anthony</a></span>
-                <span class="footer__copyright">Proudly published with <a href="http://ghost.org" title="link to Ghost website">Ghost</a></span>
-            </footer>        </div>
-    </div>
-
-    <script src="public/jquery.js?v=1de74e8441"></script>
-
-    <script type="text/javascript" src="assets/js/main.js?v=1de74e8441"></script>
-
-</body>
-</html>
