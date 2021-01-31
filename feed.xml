@@ -1,30 +1,312 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>José</title>
+    <description>Pasión geek!</description>
+    <link>/jekyll-theme-memoirs/</link>
+    <atom:link href="/jekyll-theme-memoirs/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 31 Jan 2021 19:03:39 +0100</pubDate>
+    <lastBuildDate>Sun, 31 Jan 2021 19:03:39 +0100</lastBuildDate>
+    <generator>Jekyll v4.2.0</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>Instalación de Octoprint-TFT</title>
+        <description>&lt;p&gt;Octoprint-TFT es una interfaz táctil OctoPrint para módulos táctiles TFT basados en GTK + 3 que nos sirve para controlar nuestra impresora 3D.&lt;/p&gt;
+
+&lt;p&gt;Voy a explicar los pasos que he seguido para instalar Octoprint-TFT en una raspberry pi 2 y una pantalla tft de 3.5”. Partiendo del punto en el que ya tenemos instalado octoprint, con el SSH activado.&lt;/p&gt;
+
+&lt;p&gt;1) Instalación de drivers de la pantalla desde SSH:&lt;/p&gt;
+
+&lt;p&gt;Para que la pantalla funcione en la Rpi con nuestro octoprint, debemos conectarnos vía ssh a través del terminal de nuestro ordenador e introducir los siguientes comandos.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;wget https://www.waveshare.com/w/upload/1/1e/LCD-show-180817.tar.gz
+tar xvf LCD-show-180817.tar.gz
+cd LCD-show/
+chmod +x LCD35-show
+./LCD35-show
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;La Rpi se reiniciara y nos aparecerá la consola por la pantalla.
+2) Instalacion de Octoprint-TFT&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;sudo apt-get update
+sudo apt-get install xserver-xorg xinit libgtk-3-0 xserver-xorg-video-fbdev
+wget https://github.com/mcuadros/OctoPrint-TFT/releases/download/v0.1.2/octoprint-tft_0.1.2-1.stretch_armhf.deb
+sudo dpkg -i octoprint-tft_0.1.2-1.stretch_armhf.deb
+sudo mv /usr/share/X11/xorg.conf.d/99-fbturbo.conf ~
+sudo nano /lib/systemd/system/octoprint-tft.service
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Cambiamos el valor 0 a 1 en esta linea:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;ExecStart=/usr/bin/xinit /usr/bin/OctoPrint-TFT -- :0 -nolisten tcp -nocursor
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;a&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;ExecStart=/usr/bin/xinit /usr/bin/OctoPrint-TFT -- :1 -nolisten tcp -nocursor
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Grabamos el archivo, pulsando CTRL+X y confirmamos tecleando Y, para guardarlo.
+Ya tendremos lista nuestra pantalla TFT con control táctil.&lt;/p&gt;
+
+&lt;p&gt;Fuente: https://github.com/mcuadros/OctoPrint-TFT&lt;/p&gt;
+</description>
+        <pubDate>Sat, 09 Feb 2019 00:00:00 +0100</pubDate>
+        <link>/jekyll-theme-memoirs/instalacion-de-octoprint-tft/</link>
+        <guid isPermaLink="true">/jekyll-theme-memoirs/instalacion-de-octoprint-tft/</guid>
+        
+        <category>Raspberry</category>
+        
+        
+        <category>Impresión3D</category>
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Instalar OctoPrint en una Raspberry Pi desde MacOs</title>
+        <description>&lt;p&gt;Instalar el servidor de impresión 3D OctoPrint en una Raspberry Pi desde el entorno MacOs es muy fácil.&lt;/p&gt;
+
+&lt;p&gt;Primero de todo, descargaremos la última versión de Octoprint desde la &lt;a href=&quot;https://octoprint.org/download/&quot;&gt;web oficial&lt;/a&gt;. El fichero descargado viene comprimido en un zip. No es necesario descomprimirlo.&lt;/p&gt;
+
+&lt;p&gt;Para quemar la imagen usaremos el programa &lt;a href=&quot;https://etcher.io/&quot;&gt;Etcher&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/jekyll-theme-memoirs/assets/images/etcher.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Solo tenemos que seleccionar el archivo zip descargado, escoger la tarjeta SD que vamos a usar y a grabar. Una vez terminado debamos acceder a la tarjeta SD desde el terminal y editar con nano el archivo octopi-network.txt , donde configuraremos el bloque de configuración de seguridad inalámbrica con los datos de nuestra conexión.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;## WPA/WPA2 secured
+#iface wlan0-octopi inet manual
+#    wpa-ssid “put SSID here”
+#    wpa-psk “put password here”
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Para ello descomentamos las siguientes líneas y editamos con los datos de nuestra conexión Wifi&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;## WPA/WPA2 secured
+iface wlan0-octopi inet manual
+   wpa-ssid “put SSID here”
+   wpa-psk “put password here”
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Grabamos y salimos. Ahora ya podemos colocar la tarjeta sd en nuestra Raspberry Pi y empezar a usar el servidor de impresión, accediendo a la dirección &lt;a href=&quot;http://octopi.local&quot;&gt;http://octopi.local&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/jekyll-theme-memoirs/assets/images/octopi.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
+        <link>/jekyll-theme-memoirs/instalar-octoprint-en-una-raspberry-pi-desde-macos/</link>
+        <guid isPermaLink="true">/jekyll-theme-memoirs/instalar-octoprint-en-una-raspberry-pi-desde-macos/</guid>
+        
+        <category>Raspberry</category>
+        
+        
+        <category>Impresión3D</category>
+        
+      </item>
+    
+      <item>
+        <title>Cómo eliminar la cache de Twitter</title>
+        <description>&lt;p&gt;Si alguna vez has compartido una url en twitter y te has dado cuenta a posteriori de la existencia de algún error en el mismo, bien en el titulo o en el contenido, te darás cuenta que aunque lo corrijas, al estar cacheado en Twitter, se seguirá compartiendo con el mismo error. Por lo que para darle solución a ese situación lo que tenemos que hacer es entrar en el validador de Twitter Cards –&amp;gt; &lt;a href=&quot;https://cards-dev.twitter.com/validator&quot;&gt;https://cards-dev.twitter.com/validator&lt;/a&gt; y meter la URL que nos interesa y darle a actualizar, con esto quedará descacheada y ya podremos compartirla sin ningún error.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 26 Oct 2017 00:00:00 +0200</pubDate>
+        <link>/jekyll-theme-memoirs/como-eliminar-la-cache-de-twitter/</link>
+        <guid isPermaLink="true">/jekyll-theme-memoirs/como-eliminar-la-cache-de-twitter/</guid>
+        
+        
+        <category>Twitter</category>
+        
+      </item>
+    
+      <item>
+        <title>Probando AcDisplay</title>
+        <description>&lt;p&gt;He probado la app AcDisplay en mi Xiaomi MI 3 y me ha encantado su diseño que es agradable y minimalista. Esta app nos permite gestionar de un modo diferente las notificaciones en nuestro movil Android.&lt;/p&gt;
+
+&lt;p&gt;Las notificaciones que recibimos nos aparecen en la pantalla de bloqueo. Entre sus características están las de establecer horas de inactividad (ahorra batería), lista negra, etc.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/jekyll-theme-memoirs/assets/images/AcDisplay2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/jekyll-theme-memoirs/assets/images/AcDisplay3.png&quot; alt=&quot;image&quot; /&gt;
+AcDisplay en &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.achep.acdisplay&amp;amp;hl=es&quot;&gt;Google Play&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 23 Jan 2015 00:00:00 +0100</pubDate>
+        <link>/jekyll-theme-memoirs/probando-acdisplay/</link>
+        <guid isPermaLink="true">/jekyll-theme-memoirs/probando-acdisplay/</guid>
+        
+        <category>App</category>
+        
+        
+        <category>Android</category>
+        
+      </item>
+    
+      <item>
+        <title>Actualizando Ghost</title>
+        <description>&lt;p&gt;Ha salido una nueva versión de Ghost y queremos actualizar. ¿Qué tenemos que hacer? Pues muy fácil, primero descargaremos la última versión de &lt;a href=&quot;https://ghost.org/download/&quot;&gt;Ghost&lt;/a&gt; y la descomprimiremos. Después subimos el contenido al servidor donde tenemos alojado nuestro blog y sustituiremos los archivos. Lo único que no vamos a subir es la carpeta &lt;strong&gt;content&lt;/strong&gt;, que es la que posee el contenido de nuestro blog y el theme que usamos.&lt;/p&gt;
+
+&lt;p&gt;Después procedemos a instalarlo vía terminal,&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;npm install --production
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;y a arrancarlo.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;npm start
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Y ya tenemos el blog operativo y actualizado a la última versión.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 22 Dec 2014 00:00:00 +0100</pubDate>
+        <link>/jekyll-theme-memoirs/actualizando-ghost/</link>
+        <guid isPermaLink="true">/jekyll-theme-memoirs/actualizando-ghost/</guid>
+        
+        <category>CMS</category>
+        
+        
+        <category>Ghost</category>
+        
+      </item>
+    
+      <item>
+        <title>Instalando Ghost en local y en un Mac</title>
+        <description>&lt;p&gt;Lo primero que haremos es dirigirnos a la web oficial &lt;a href=&quot;https://ghost.org/&quot;&gt;ghost.org&lt;/a&gt; y &lt;a href=&quot;https://ghost.org/download/&quot;&gt;descargar&lt;/a&gt; la versión más reciente. El archivo en cuestión se trata de un archivo comprimido que una vez descargado, descomprimiremos y lo pondremos, por ejemplo en la raíz del disco duro.&lt;/p&gt;
+
+&lt;p&gt;A través del terminal no dirigimos a esa ubicación.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;cd ghost
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Procederemos a instalarlo.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;npm install --production
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Después lo arrancaremos, ya en local.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;npm start
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Nos indicará que ya está operativo en la dirección &lt;strong&gt;127.0.0.1:2368&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Lo primero que haremos será crear una cuenta de administrador (&lt;strong&gt;127.0.0.1:2368/admin&lt;/strong&gt;) y ya podemos empezar a bloguear en local …&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 14 Dec 2014 00:00:00 +0100</pubDate>
+        <link>/jekyll-theme-memoirs/instalando-ghost-en-local-en-un-mac/</link>
+        <guid isPermaLink="true">/jekyll-theme-memoirs/instalando-ghost-en-local-en-un-mac/</guid>
+        
+        <category>CMS</category>
+        
+        
+        <category>Ghost</category>
+        
+      </item>
+    
+      <item>
+        <title>Un nuevo componente en mi familia</title>
+        <description>&lt;p&gt;Hoy llegó un nuevo componente para mi familia. Se trata de Koke un cocker spaniel de dos meses de edad y de color canela. Un cachorro super guapo y cariñoso que ya se ha ganado el cariño de tod@s nosotros.&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&quot;instagram-media&quot; data-instgrm-captioned=&quot;&quot; data-instgrm-version=&quot;4&quot; style=&quot; background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);&quot;&gt;&lt;div style=&quot;padding:8px;&quot;&gt; &lt;div style=&quot; background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;&quot;&gt; &lt;div style=&quot; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;&quot;&gt;&lt;/div&gt;&lt;/div&gt; &lt;p style=&quot; margin:8px 0 0 0; padding:0 4px;&quot;&gt; &lt;a href=&quot;https://instagram.com/p/vQxNrgo-KH/&quot; style=&quot; color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;&quot; target=&quot;_top&quot;&gt;Un nuevo componente de mi familia :)&lt;/a&gt;&lt;/p&gt; &lt;p style=&quot; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;&quot;&gt;Una foto publicada por José (@jose.ga) on &lt;time style=&quot; font-family:Arial,sans-serif; font-size:14px; line-height:17px;&quot; datetime=&quot;2014-11-11T14:00:26+00:00&quot;&gt;Nov 11, 2014 at 6:00 PST&lt;/time&gt;&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;script async=&quot;&quot; defer=&quot;&quot; src=&quot;http://platform.instagram.com/en_US/embeds.js&quot;&gt;&lt;/script&gt; &lt;br /&gt;
+&lt;center&gt;Koke en su cama&lt;/center&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 12 Nov 2014 00:00:00 +0100</pubDate>
+        <link>/jekyll-theme-memoirs/un-nuevo-componente-en-mi-familia/</link>
+        <guid isPermaLink="true">/jekyll-theme-memoirs/un-nuevo-componente-en-mi-familia/</guid>
+        
+        
+        <category>Cocker</category>
+        
+      </item>
+    
+      <item>
+        <title>Disfrutando de un iPhone 6</title>
+        <description>&lt;p&gt;Es lo que tiene cumplir años, que de vez en cuando cae como regalo algo super especial. Y este ha sido ese año. Mi mujer me ha regalado un iPhone 6 de 4,7 pulgadas y 64 Gb de capacidad.&lt;/p&gt;
+
+&lt;p&gt;Tengo que decir que es una pasada de móvil. Realmente es muy delgado (0,69 cm) y lo de desbloquear el móvil con la huella dactilar funciona a la perfección. Ahora a disfrutarlo!&lt;/p&gt;
+
+&lt;p&gt;Os dejo unas instantáneas del mismo.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/jekyll-theme-memoirs/assets/images/iphone6_2.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/jekyll-theme-memoirs/assets/images/iphone6_3.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 26 Oct 2014 00:00:00 +0200</pubDate>
+        <link>/jekyll-theme-memoirs/disfrutando-de-un-iphone-6/</link>
+        <guid isPermaLink="true">/jekyll-theme-memoirs/disfrutando-de-un-iphone-6/</guid>
+        
+        <category>iPhone</category>
+        
+        
+        <category>Apple</category>
+        
+      </item>
+    
+      <item>
+        <title>Probando Jekyll</title>
+        <description>&lt;p&gt;Primero de todo, decir que &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; es un parser programado en Ruby que se utiliza para bloguear en estático.&lt;/p&gt;
+
+&lt;p&gt;Lo primero que hay que hacer es instalarlo en el ordenador&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;$ gem install jekyll
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Después crearemos una carpeta donde vamos alojar localmente el blog.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;$ jekyll new my-awesome-site
+
+$ cd my-awesome-site
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Y después arrancamos el serve&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;/my-awesome-site $ jekyll serve
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Si todo va bien, Jekyll generará todo y te dará una URL donde ver el sitio generado, en mi caso es &lt;strong&gt;http://0.0.0.0:4000&lt;/strong&gt;, que a posteriori podemos hospedar en &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 19 Oct 2014 00:00:00 +0200</pubDate>
+        <link>/jekyll-theme-memoirs/probando-jekyll/</link>
+        <guid isPermaLink="true">/jekyll-theme-memoirs/probando-jekyll/</guid>
+        
+        <category>CMS</category>
+        
+        
+        <category>Jekyll</category>
+        
+      </item>
+    
+      <item>
+        <title>Instalando MIUI6 en mi Xiaomi MI3W</title>
+        <description>&lt;p&gt;&lt;strong&gt;Miui&lt;/strong&gt; es un firmware para smartphones basado en el sistema operativo de código abierto Android desarrollado por Xiaomi Tech y viendo que había salido la version oficial de MIUI6 y que ya se encontraba disponible la Rom traducida al español por parte de los chicos de &lt;a href=&quot;http://127.0.0.1:2368/instalando-miui6-en-mi-xiaomi-mi3w/miui.es&quot;&gt;miui.es&lt;/a&gt;, me decidí a actualizar mi Xiaomi MI3W de MIUI v5 a MIUI6&lt;/p&gt;
+
+&lt;h2 id=&quot;proceso&quot;&gt;Proceso&lt;/h2&gt;
+
+&lt;p&gt;Antes de nada lo que hice fue actualizar mi &lt;strong&gt;CWM Recovery&lt;/strong&gt; a la versión 6.0.5.0. Para ello, después de &lt;a href=&quot;http://www.mediafire.com/download/5d8m6ha282hztv2/CWM_Recovery_r8_Mi4_Mi3_Cancro_20140911_signed.zip&quot;&gt;descargar el archivo&lt;/a&gt;, lo coloque en la raíz de la memoria del teléfono, reinicié en el recovery e instalé como si de una ROM se tratase.&lt;/p&gt;
+
+&lt;p&gt;Las características de este recovery son las siguientes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Activación y desactivación de True Dual Boot&lt;/li&gt;
+  &lt;li&gt;Aroma File Manager&lt;/li&gt;
+  &lt;li&gt;Manejo con la pantalla táctil&lt;/li&gt;
+  &lt;li&gt;Limpieza de la partición /data (wipe data)&lt;/li&gt;
+  &lt;li&gt;Limpieza de la caché (wipe cache)&lt;/li&gt;
+  &lt;li&gt;Creación y restauración de copias de seguridad NAND (sistema y datos)&lt;/li&gt;
+  &lt;li&gt;Apagado del dispositivo&lt;/li&gt;
+  &lt;li&gt;ADB en modo recovery&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Actualizado el CWM recovery procedí a descargar la &lt;a href=&quot;http://www.mediafire.com/download/j9xlnpx543xf6gk&quot;&gt;Rom (4.9.9)&lt;/a&gt; traducida por miui.es y a copiarla a la memoria interna (Internal Storage) del Mi3W.&lt;/p&gt;
+
+&lt;p&gt;Apagué el móvil y lo inicié en modo Recovery (Pulsando Botón Encendido + Volumen Arriba).&lt;/p&gt;
+
+&lt;p&gt;Seleccioné el system donde instalar la rom (system1)&lt;/p&gt;
+
+&lt;p&gt;Hice los wipes “wipe data/factory reset” “wipe cache partition” y “wipe dalvik cache” para hacer una instalación limpia.&lt;/p&gt;
+
+&lt;p&gt;Después seleccioné las opciones: “Install zip from sdcard” –&amp;gt; “chosse zip from sdcard” –&amp;gt; “0/”&lt;/p&gt;
+
+&lt;p&gt;Navegué por los archivos hasta encontrar y seleccionar el archivo .zip de la Rom. Confirmé la instalación y esta se realizó.&lt;/p&gt;
+
+&lt;p&gt;Para finalizar reinicié pulsando “reboot system now”, dando por finalizado la instalación.&lt;/p&gt;
+
+&lt;h2 id=&quot;pantallazos&quot;&gt;Pantallazos&lt;/h2&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/jekyll-theme-memoirs/assets/images/miui1.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/jekyll-theme-memoirs/assets/images/miui2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/jekyll-theme-memoirs/assets/images/miui3.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 14 Sep 2014 00:00:00 +0200</pubDate>
+        <link>/jekyll-theme-memoirs/instalando-miui6-en-mi-xiaomi-mi3w/</link>
+        <guid isPermaLink="true">/jekyll-theme-memoirs/instalando-miui6-en-mi-xiaomi-mi3w/</guid>
+        
+        <category>Miui</category>
+        
+        
+        <category>Xiaomi</category>
+        
+      </item>
+    
   </channel>
 </rss>
