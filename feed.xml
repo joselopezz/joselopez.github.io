@@ -3,10 +3,10 @@
   <channel>
     <title>José</title>
     <description>Pasión geek!</description>
-    <link>/jekyll-theme-memoirs/</link>
-    <atom:link href="/jekyll-theme-memoirs/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 31 Jan 2021 19:03:39 +0100</pubDate>
-    <lastBuildDate>Sun, 31 Jan 2021 19:03:39 +0100</lastBuildDate>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 31 Jan 2021 19:09:34 +0100</pubDate>
+    <lastBuildDate>Sun, 31 Jan 2021 19:09:34 +0100</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -46,9 +46,61 @@ Ya tendremos lista nuestra pantalla TFT con control táctil.&lt;/p&gt;
 
 &lt;p&gt;Fuente: https://github.com/mcuadros/OctoPrint-TFT&lt;/p&gt;
 </description>
+        <pubDate>Sat, 02 Jan 2021 00:00:00 +0100</pubDate>
+        <link>/instalacion-de-octoprint/</link>
+        <guid isPermaLink="true">/instalacion-de-octoprint/</guid>
+        
+        <category>France</category>
+        
+        
+        <category>Raspberry</category>
+        
+        <category>Impresión3D</category>
+        
+        <category>Octoprint-TFT</category>
+        
+      </item>
+    
+      <item>
+        <title>Instalación de Octoprint-TFT</title>
+        <description>&lt;p&gt;Octoprint-TFT es una interfaz táctil OctoPrint para módulos táctiles TFT basados en GTK + 3 que nos sirve para controlar nuestra impresora 3D.&lt;/p&gt;
+
+&lt;p&gt;Voy a explicar los pasos que he seguido para instalar Octoprint-TFT en una raspberry pi 2 y una pantalla tft de 3.5”. Partiendo del punto en el que ya tenemos instalado octoprint, con el SSH activado.&lt;/p&gt;
+
+&lt;p&gt;1) Instalación de drivers de la pantalla desde SSH:&lt;/p&gt;
+
+&lt;p&gt;Para que la pantalla funcione en la Rpi con nuestro octoprint, debemos conectarnos vía ssh a través del terminal de nuestro ordenador e introducir los siguientes comandos.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;wget https://www.waveshare.com/w/upload/1/1e/LCD-show-180817.tar.gz
+tar xvf LCD-show-180817.tar.gz
+cd LCD-show/
+chmod +x LCD35-show
+./LCD35-show
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;La Rpi se reiniciara y nos aparecerá la consola por la pantalla.
+2) Instalacion de Octoprint-TFT&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;sudo apt-get update
+sudo apt-get install xserver-xorg xinit libgtk-3-0 xserver-xorg-video-fbdev
+wget https://github.com/mcuadros/OctoPrint-TFT/releases/download/v0.1.2/octoprint-tft_0.1.2-1.stretch_armhf.deb
+sudo dpkg -i octoprint-tft_0.1.2-1.stretch_armhf.deb
+sudo mv /usr/share/X11/xorg.conf.d/99-fbturbo.conf ~
+sudo nano /lib/systemd/system/octoprint-tft.service
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Cambiamos el valor 0 a 1 en esta linea:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;ExecStart=/usr/bin/xinit /usr/bin/OctoPrint-TFT -- :0 -nolisten tcp -nocursor
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;a&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;ExecStart=/usr/bin/xinit /usr/bin/OctoPrint-TFT -- :1 -nolisten tcp -nocursor
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Grabamos el archivo, pulsando CTRL+X y confirmamos tecleando Y, para guardarlo.
+Ya tendremos lista nuestra pantalla TFT con control táctil.&lt;/p&gt;
+
+&lt;p&gt;Fuente: https://github.com/mcuadros/OctoPrint-TFT&lt;/p&gt;
+</description>
         <pubDate>Sat, 09 Feb 2019 00:00:00 +0100</pubDate>
-        <link>/jekyll-theme-memoirs/instalacion-de-octoprint-tft/</link>
-        <guid isPermaLink="true">/jekyll-theme-memoirs/instalacion-de-octoprint-tft/</guid>
+        <link>/instalacion-de-octoprint-tft/</link>
+        <guid isPermaLink="true">/instalacion-de-octoprint-tft/</guid>
         
         <category>Raspberry</category>
         
@@ -65,7 +117,7 @@ Ya tendremos lista nuestra pantalla TFT con control táctil.&lt;/p&gt;
 
 &lt;p&gt;Para quemar la imagen usaremos el programa &lt;a href=&quot;https://etcher.io/&quot;&gt;Etcher&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/jekyll-theme-memoirs/assets/images/etcher.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/etcher.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Solo tenemos que seleccionar el archivo zip descargado, escoger la tarjeta SD que vamos a usar y a grabar. Una vez terminado debamos acceder a la tarjeta SD desde el terminal y editar con nano el archivo octopi-network.txt , donde configuraremos el bloque de configuración de seguridad inalámbrica con los datos de nuestra conexión.&lt;/p&gt;
 
@@ -84,12 +136,12 @@ iface wlan0-octopi inet manual
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Grabamos y salimos. Ahora ya podemos colocar la tarjeta sd en nuestra Raspberry Pi y empezar a usar el servidor de impresión, accediendo a la dirección &lt;a href=&quot;http://octopi.local&quot;&gt;http://octopi.local&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/jekyll-theme-memoirs/assets/images/octopi.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/octopi.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
-        <link>/jekyll-theme-memoirs/instalar-octoprint-en-una-raspberry-pi-desde-macos/</link>
-        <guid isPermaLink="true">/jekyll-theme-memoirs/instalar-octoprint-en-una-raspberry-pi-desde-macos/</guid>
+        <link>/instalar-octoprint-en-una-raspberry-pi-desde-macos/</link>
+        <guid isPermaLink="true">/instalar-octoprint-en-una-raspberry-pi-desde-macos/</guid>
         
         <category>Raspberry</category>
         
@@ -104,8 +156,8 @@ iface wlan0-octopi inet manual
 
 </description>
         <pubDate>Thu, 26 Oct 2017 00:00:00 +0200</pubDate>
-        <link>/jekyll-theme-memoirs/como-eliminar-la-cache-de-twitter/</link>
-        <guid isPermaLink="true">/jekyll-theme-memoirs/como-eliminar-la-cache-de-twitter/</guid>
+        <link>/como-eliminar-la-cache-de-twitter/</link>
+        <guid isPermaLink="true">/como-eliminar-la-cache-de-twitter/</guid>
         
         
         <category>Twitter</category>
@@ -118,14 +170,14 @@ iface wlan0-octopi inet manual
 
 &lt;p&gt;Las notificaciones que recibimos nos aparecen en la pantalla de bloqueo. Entre sus características están las de establecer horas de inactividad (ahorra batería), lista negra, etc.&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/jekyll-theme-memoirs/assets/images/AcDisplay2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/AcDisplay2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/jekyll-theme-memoirs/assets/images/AcDisplay3.png&quot; alt=&quot;image&quot; /&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/AcDisplay3.png&quot; alt=&quot;image&quot; /&gt;
 AcDisplay en &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.achep.acdisplay&amp;amp;hl=es&quot;&gt;Google Play&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 23 Jan 2015 00:00:00 +0100</pubDate>
-        <link>/jekyll-theme-memoirs/probando-acdisplay/</link>
-        <guid isPermaLink="true">/jekyll-theme-memoirs/probando-acdisplay/</guid>
+        <link>/probando-acdisplay/</link>
+        <guid isPermaLink="true">/probando-acdisplay/</guid>
         
         <category>App</category>
         
@@ -148,8 +200,8 @@ AcDisplay en &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.
 
 </description>
         <pubDate>Mon, 22 Dec 2014 00:00:00 +0100</pubDate>
-        <link>/jekyll-theme-memoirs/actualizando-ghost/</link>
-        <guid isPermaLink="true">/jekyll-theme-memoirs/actualizando-ghost/</guid>
+        <link>/actualizando-ghost/</link>
+        <guid isPermaLink="true">/actualizando-ghost/</guid>
         
         <category>CMS</category>
         
@@ -177,8 +229,8 @@ AcDisplay en &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.
 
 </description>
         <pubDate>Sun, 14 Dec 2014 00:00:00 +0100</pubDate>
-        <link>/jekyll-theme-memoirs/instalando-ghost-en-local-en-un-mac/</link>
-        <guid isPermaLink="true">/jekyll-theme-memoirs/instalando-ghost-en-local-en-un-mac/</guid>
+        <link>/instalando-ghost-en-local-en-un-mac/</link>
+        <guid isPermaLink="true">/instalando-ghost-en-local-en-un-mac/</guid>
         
         <category>CMS</category>
         
@@ -195,8 +247,8 @@ AcDisplay en &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.
 &lt;center&gt;Koke en su cama&lt;/center&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 12 Nov 2014 00:00:00 +0100</pubDate>
-        <link>/jekyll-theme-memoirs/un-nuevo-componente-en-mi-familia/</link>
-        <guid isPermaLink="true">/jekyll-theme-memoirs/un-nuevo-componente-en-mi-familia/</guid>
+        <link>/un-nuevo-componente-en-mi-familia/</link>
+        <guid isPermaLink="true">/un-nuevo-componente-en-mi-familia/</guid>
         
         
         <category>Cocker</category>
@@ -211,13 +263,13 @@ AcDisplay en &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.
 
 &lt;p&gt;Os dejo unas instantáneas del mismo.&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/jekyll-theme-memoirs/assets/images/iphone6_2.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/iphone6_2.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/jekyll-theme-memoirs/assets/images/iphone6_3.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/iphone6_3.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 26 Oct 2014 00:00:00 +0200</pubDate>
-        <link>/jekyll-theme-memoirs/disfrutando-de-un-iphone-6/</link>
-        <guid isPermaLink="true">/jekyll-theme-memoirs/disfrutando-de-un-iphone-6/</guid>
+        <link>/disfrutando-de-un-iphone-6/</link>
+        <guid isPermaLink="true">/disfrutando-de-un-iphone-6/</guid>
         
         <category>iPhone</category>
         
@@ -244,67 +296,13 @@ $ cd my-awesome-site
 &lt;p&gt;Si todo va bien, Jekyll generará todo y te dará una URL donde ver el sitio generado, en mi caso es &lt;strong&gt;http://0.0.0.0:4000&lt;/strong&gt;, que a posteriori podemos hospedar en &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sun, 19 Oct 2014 00:00:00 +0200</pubDate>
-        <link>/jekyll-theme-memoirs/probando-jekyll/</link>
-        <guid isPermaLink="true">/jekyll-theme-memoirs/probando-jekyll/</guid>
+        <link>/probando-jekyll/</link>
+        <guid isPermaLink="true">/probando-jekyll/</guid>
         
         <category>CMS</category>
         
         
         <category>Jekyll</category>
-        
-      </item>
-    
-      <item>
-        <title>Instalando MIUI6 en mi Xiaomi MI3W</title>
-        <description>&lt;p&gt;&lt;strong&gt;Miui&lt;/strong&gt; es un firmware para smartphones basado en el sistema operativo de código abierto Android desarrollado por Xiaomi Tech y viendo que había salido la version oficial de MIUI6 y que ya se encontraba disponible la Rom traducida al español por parte de los chicos de &lt;a href=&quot;http://127.0.0.1:2368/instalando-miui6-en-mi-xiaomi-mi3w/miui.es&quot;&gt;miui.es&lt;/a&gt;, me decidí a actualizar mi Xiaomi MI3W de MIUI v5 a MIUI6&lt;/p&gt;
-
-&lt;h2 id=&quot;proceso&quot;&gt;Proceso&lt;/h2&gt;
-
-&lt;p&gt;Antes de nada lo que hice fue actualizar mi &lt;strong&gt;CWM Recovery&lt;/strong&gt; a la versión 6.0.5.0. Para ello, después de &lt;a href=&quot;http://www.mediafire.com/download/5d8m6ha282hztv2/CWM_Recovery_r8_Mi4_Mi3_Cancro_20140911_signed.zip&quot;&gt;descargar el archivo&lt;/a&gt;, lo coloque en la raíz de la memoria del teléfono, reinicié en el recovery e instalé como si de una ROM se tratase.&lt;/p&gt;
-
-&lt;p&gt;Las características de este recovery son las siguientes:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Activación y desactivación de True Dual Boot&lt;/li&gt;
-  &lt;li&gt;Aroma File Manager&lt;/li&gt;
-  &lt;li&gt;Manejo con la pantalla táctil&lt;/li&gt;
-  &lt;li&gt;Limpieza de la partición /data (wipe data)&lt;/li&gt;
-  &lt;li&gt;Limpieza de la caché (wipe cache)&lt;/li&gt;
-  &lt;li&gt;Creación y restauración de copias de seguridad NAND (sistema y datos)&lt;/li&gt;
-  &lt;li&gt;Apagado del dispositivo&lt;/li&gt;
-  &lt;li&gt;ADB en modo recovery&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Actualizado el CWM recovery procedí a descargar la &lt;a href=&quot;http://www.mediafire.com/download/j9xlnpx543xf6gk&quot;&gt;Rom (4.9.9)&lt;/a&gt; traducida por miui.es y a copiarla a la memoria interna (Internal Storage) del Mi3W.&lt;/p&gt;
-
-&lt;p&gt;Apagué el móvil y lo inicié en modo Recovery (Pulsando Botón Encendido + Volumen Arriba).&lt;/p&gt;
-
-&lt;p&gt;Seleccioné el system donde instalar la rom (system1)&lt;/p&gt;
-
-&lt;p&gt;Hice los wipes “wipe data/factory reset” “wipe cache partition” y “wipe dalvik cache” para hacer una instalación limpia.&lt;/p&gt;
-
-&lt;p&gt;Después seleccioné las opciones: “Install zip from sdcard” –&amp;gt; “chosse zip from sdcard” –&amp;gt; “0/”&lt;/p&gt;
-
-&lt;p&gt;Navegué por los archivos hasta encontrar y seleccionar el archivo .zip de la Rom. Confirmé la instalación y esta se realizó.&lt;/p&gt;
-
-&lt;p&gt;Para finalizar reinicié pulsando “reboot system now”, dando por finalizado la instalación.&lt;/p&gt;
-
-&lt;h2 id=&quot;pantallazos&quot;&gt;Pantallazos&lt;/h2&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/jekyll-theme-memoirs/assets/images/miui1.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/jekyll-theme-memoirs/assets/images/miui2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/jekyll-theme-memoirs/assets/images/miui3.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 14 Sep 2014 00:00:00 +0200</pubDate>
-        <link>/jekyll-theme-memoirs/instalando-miui6-en-mi-xiaomi-mi3w/</link>
-        <guid isPermaLink="true">/jekyll-theme-memoirs/instalando-miui6-en-mi-xiaomi-mi3w/</guid>
-        
-        <category>Miui</category>
-        
-        
-        <category>Xiaomi</category>
         
       </item>
     
