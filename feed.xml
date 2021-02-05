@@ -5,9 +5,41 @@
     <description>Pasión geek!</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 01 Feb 2021 17:13:42 +0100</pubDate>
-    <lastBuildDate>Mon, 01 Feb 2021 17:13:42 +0100</lastBuildDate>
+    <pubDate>Fri, 05 Feb 2021 21:39:53 +0100</pubDate>
+    <lastBuildDate>Fri, 05 Feb 2021 21:39:53 +0100</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Formatear una Compact Flash en FAT16 en Ubuntu</title>
+        <description>&lt;p&gt;He tenido la necesidad de formatear una Compact Flash en formato FAT16 y en esta líneas voy a plasmar los pasos que he seguido para hacerlo desde el sistema operativo Ubuntu.&lt;/p&gt;
+
+&lt;p&gt;Desde la Terminal y como root, instalar las utilidades para formatear.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;apt-get install dosfstools
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Después de conectar la CF en su lector y este al ordenador, averiguo la ubicación del dispositivo con el siguiente comando:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;df
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Obtendré una salida similar a esta:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;tmpfs
+/dev/sda1 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ahora procedemos a desmontar el volumen.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;umount /dev/sda1 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Y finalmente formateamos el dispositivo con el siguiente comando:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;mkdosfs -v /dev/sda1 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Y objetivo conseguido.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 05 Feb 2021 00:00:00 +0100</pubDate>
+        <link>/formatear-una-compact-flash-en-fat16-en-ubuntu/</link>
+        <guid isPermaLink="true">/formatear-una-compact-flash-en-fat16-en-ubuntu/</guid>
+        
+        
+        <category>Ubuntu</category>
+        
+      </item>
     
       <item>
         <title>Instalación de Octoprint-TFT</title>
@@ -251,60 +283,6 @@ $ cd my-awesome-site
         
         
         <category>Jekyll</category>
-        
-      </item>
-    
-      <item>
-        <title>Instalando MIUI6 en mi Xiaomi MI3W</title>
-        <description>&lt;p&gt;&lt;strong&gt;Miui&lt;/strong&gt; es un firmware para smartphones basado en el sistema operativo de código abierto Android desarrollado por Xiaomi Tech y viendo que había salido la version oficial de MIUI6 y que ya se encontraba disponible la Rom traducida al español por parte de los chicos de &lt;a href=&quot;http://127.0.0.1:2368/instalando-miui6-en-mi-xiaomi-mi3w/miui.es&quot;&gt;miui.es&lt;/a&gt;, me decidí a actualizar mi Xiaomi MI3W de MIUI v5 a MIUI6&lt;/p&gt;
-
-&lt;h2 id=&quot;proceso&quot;&gt;Proceso&lt;/h2&gt;
-
-&lt;p&gt;Antes de nada lo que hice fue actualizar mi &lt;strong&gt;CWM Recovery&lt;/strong&gt; a la versión 6.0.5.0. Para ello, después de &lt;a href=&quot;http://www.mediafire.com/download/5d8m6ha282hztv2/CWM_Recovery_r8_Mi4_Mi3_Cancro_20140911_signed.zip&quot;&gt;descargar el archivo&lt;/a&gt;, lo coloque en la raíz de la memoria del teléfono, reinicié en el recovery e instalé como si de una ROM se tratase.&lt;/p&gt;
-
-&lt;p&gt;Las características de este recovery son las siguientes:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Activación y desactivación de True Dual Boot&lt;/li&gt;
-  &lt;li&gt;Aroma File Manager&lt;/li&gt;
-  &lt;li&gt;Manejo con la pantalla táctil&lt;/li&gt;
-  &lt;li&gt;Limpieza de la partición /data (wipe data)&lt;/li&gt;
-  &lt;li&gt;Limpieza de la caché (wipe cache)&lt;/li&gt;
-  &lt;li&gt;Creación y restauración de copias de seguridad NAND (sistema y datos)&lt;/li&gt;
-  &lt;li&gt;Apagado del dispositivo&lt;/li&gt;
-  &lt;li&gt;ADB en modo recovery&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Actualizado el CWM recovery procedí a descargar la &lt;a href=&quot;http://www.mediafire.com/download/j9xlnpx543xf6gk&quot;&gt;Rom (4.9.9)&lt;/a&gt; traducida por miui.es y a copiarla a la memoria interna (Internal Storage) del Mi3W.&lt;/p&gt;
-
-&lt;p&gt;Apagué el móvil y lo inicié en modo Recovery (Pulsando Botón Encendido + Volumen Arriba).&lt;/p&gt;
-
-&lt;p&gt;Seleccioné el system donde instalar la rom (system1)&lt;/p&gt;
-
-&lt;p&gt;Hice los wipes “wipe data/factory reset” “wipe cache partition” y “wipe dalvik cache” para hacer una instalación limpia.&lt;/p&gt;
-
-&lt;p&gt;Después seleccioné las opciones: “Install zip from sdcard” –&amp;gt; “chosse zip from sdcard” –&amp;gt; “0/”&lt;/p&gt;
-
-&lt;p&gt;Navegué por los archivos hasta encontrar y seleccionar el archivo .zip de la Rom. Confirmé la instalación y esta se realizó.&lt;/p&gt;
-
-&lt;p&gt;Para finalizar reinicié pulsando “reboot system now”, dando por finalizado la instalación.&lt;/p&gt;
-
-&lt;h2 id=&quot;pantallazos&quot;&gt;Pantallazos&lt;/h2&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/miui1.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/miui2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/miui3.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 14 Sep 2014 00:00:00 +0200</pubDate>
-        <link>/instalando-miui6-en-mi-xiaomi-mi3w/</link>
-        <guid isPermaLink="true">/instalando-miui6-en-mi-xiaomi-mi3w/</guid>
-        
-        <category>Miui</category>
-        
-        
-        <category>Xiaomi</category>
         
       </item>
     
