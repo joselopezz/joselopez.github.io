@@ -5,9 +5,81 @@
     <description>Pasión geek!</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 05 Feb 2021 21:39:53 +0100</pubDate>
-    <lastBuildDate>Fri, 05 Feb 2021 21:39:53 +0100</lastBuildDate>
+    <pubDate>Sat, 13 Feb 2021 22:17:56 +0100</pubDate>
+    <lastBuildDate>Sat, 13 Feb 2021 22:17:56 +0100</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Carcasa réplica Zx Spectrum + ZXBaremulator + Raspberry Pi 3A+</title>
+        <description>&lt;p&gt;Llevaba tiempo con ganas de hacer este proyecto. De hecho tenía todos los materiales comprados hacía tiempo pero lo fuí demorando porque aún no tenía nada claro como sujetar de un modo elegante y seguro la raspberry pi en el interior del Spectrum. Pero hace poco ví en Youtube varios vídeos de &lt;a href=&quot;https://www.youtube.com/channel/UCygCiziBCszld6jqV0VZmLg&quot;&gt;David programa&lt;/a&gt; y en uno de &lt;a href=&quot;https://www.youtube.com/watch?v=1dwUrC5ooDg&quot;&gt;ellos&lt;/a&gt; se muestra como hizo un proyecto como este, compartiendo unas magníficas piezas en formatos STL y OpenSCAD del soporte de la Raspberry Pi 3A+ para el spectrum.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;¿De qué se trata?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;De ejecutar el &lt;a href=&quot;https://zxmini.speccy.org/es/index.html&quot;&gt;emulador bare-metal ZXBareMulator&lt;/a&gt;, creación de &lt;strong&gt;José Luis Sánchez&lt;/strong&gt;, en una Raspberry Pi. Un programa bare-metal es aquel que no necesita cargar primero un sistema operativo para funcionar. La carga es instantánea y emula maravillosamente el ZX Spectrum 48K/128K/+2A.&lt;/p&gt;
+
+&lt;p&gt;Haciendo uso de una carcasa de Spectrum 48K y teniendo su teclado operativo, conectando su membrana al GPIO de la RPi, la sensación que se tiene es la de tener entre las manos un verdadero gomas :) .&lt;/p&gt;
+
+&lt;p&gt;Al final he montado una Raspberry Pi 3A+ dentro de la carcasa de un Spectrum, conectando la membrana del teclado al GPIO del RPi, para ejecutar el emulador bare-metal ZXBareMulator de &lt;strong&gt;José Luis Sánchez&lt;/strong&gt; y tener un Spectrum con los juegos en la tarjeta de memoria y la posibilidad de conectar a un monitor por HDMI.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pasos realizados en imagenes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/sPictrum2.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Aquí podéis ver la carcasa réplica del gomas, la membrana, el teclado, la  chapa superior y los conectores de la membrana.
+Todos estos productos los compré en su día en &lt;a href=&quot;http://retrocables.es&quot;&gt;retocables.es&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/sPictrum3.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Detalle de las piezas diseñadas por David para sujetar la RPi en la carcasa del Spectrum, impresas en 3D.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fuente piezas:&lt;/strong&gt; &lt;a href=&quot;https://github.com/davidprograma/ytc/tree/master/16-ZxSPiCTRUM/SPiCTRUM-RPi-backplanes&quot;&gt;https://github.com/davidprograma/ytc/tree/master/16-ZxSPiCTRUM/SPiCTRUM-RPi-backplanes&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;center center&quot;&gt;&lt;img src=&quot;/assets/images/SPiCTRUM-GPIO-8keyb5-Schematic.png&quot; alt=&quot;image&quot; /&gt;
+Esquema de conexionado. &lt;strong&gt;Fuente imagen:&lt;/strong&gt; &lt;a href=&quot;https://github.com/davidprograma&quot;&gt;https://github.com/davidprograma&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/sPictrum4.jpg&quot; alt=&quot;image&quot; /&gt;
+Siguiendo el esquema de conexionado GPIO, que facilita David en su github, procedí a  conectar 5 pines GPIO al conector de 5 pines y 8 pines GPIO al conector de 8 pines con los diodos 1N4148, montando dos placas pequeñas y cableando.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/sPictrum5.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Posicionando todo en el interior de la carcasa.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/sPictrum6.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Conectadas las fajas de la membrana a sus correspondientes conectores. También le he conectado en el puerto USB una &lt;strong&gt;Magic-Ns&lt;/strong&gt; ya que esta está soportada en &lt;strong&gt;ZXBareMulator&lt;/strong&gt;, con lo que puedo hacer uso de una mando de PS4 :)&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/sPictrum7.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y finalmente cerramos la carcasa y ponemos todos los tornillos.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/sPictrum8.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;La versión que uso de ZXBaremulator es la 3.2.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Características destacadas:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Permite conectar un teclado real de Spectrum 48k, Spectrum+ o Spectrum 128K (pero no los +2a/+3) a la Raspberry PI vía GPIO.&lt;/li&gt;
+  &lt;li&gt;Tiene soporte para el adaptador USB MAGIC-NS de Mayflash. Con él se pueden conectar un montón de mandos, tanto por cable como por Bluetooth. El adaptador debe estar en modo DirectInput (LED de color azul).&lt;/li&gt;
+  &lt;li&gt;Se ha acelerado un poco el método de carga de las cintas virtuales.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Me encanta como ha quedado!! todo funciona perfectamente.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://zxmini.speccy.org/es/index.html&quot;&gt;ZXBareMulator&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.youtube.com/channel/UCygCiziBCszld6jqV0VZmLg&quot;&gt;YouTube David programa&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 13 Feb 2021 00:00:00 +0100</pubDate>
+        <link>/sPictrum/</link>
+        <guid isPermaLink="true">/sPictrum/</guid>
+        
+        <category>ZX Spectrum</category>
+        
+        
+        <category>Retro</category>
+        
+      </item>
     
       <item>
         <title>Formatear una Compact Flash en FAT16 en Ubuntu</title>
@@ -255,34 +327,6 @@ AcDisplay en &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.
         
         
         <category>Apple</category>
-        
-      </item>
-    
-      <item>
-        <title>Probando Jekyll</title>
-        <description>&lt;p&gt;Primero de todo, decir que &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; es un parser programado en Ruby que se utiliza para bloguear en estático.&lt;/p&gt;
-
-&lt;p&gt;Lo primero que hay que hacer es instalarlo en el ordenador&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;$ gem install jekyll
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Después crearemos una carpeta donde vamos alojar localmente el blog.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;$ jekyll new my-awesome-site
-
-$ cd my-awesome-site
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Y después arrancamos el serve&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;/my-awesome-site $ jekyll serve
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Si todo va bien, Jekyll generará todo y te dará una URL donde ver el sitio generado, en mi caso es &lt;strong&gt;http://0.0.0.0:4000&lt;/strong&gt;, que a posteriori podemos hospedar en &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 19 Oct 2014 00:00:00 +0200</pubDate>
-        <link>/probando-jekyll/</link>
-        <guid isPermaLink="true">/probando-jekyll/</guid>
-        
-        <category>CMS</category>
-        
-        
-        <category>Jekyll</category>
         
       </item>
     

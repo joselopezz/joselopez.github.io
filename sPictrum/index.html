@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="/assets/images/logo.png">
+
+<title>Carcasa réplica Zx Spectrum + ZXBaremulator + Raspberry Pi 3A+ | José</title>
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Carcasa réplica Zx Spectrum + ZXBaremulator + Raspberry Pi 3A+ | José</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Carcasa réplica Zx Spectrum + ZXBaremulator + Raspberry Pi 3A+" />
+<meta name="author" content="jose" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Llevaba tiempo con ganas de hacer este proyecto. De hecho tenía todos los materiales comprados hacía tiempo pero lo fuí demorando porque aún no tenía nada claro como sujetar de un modo elegante y seguro la raspberry pi en el interior del Spectrum. Pero hace poco ví en Youtube varios vídeos de David programa y en uno de ellos se muestra como hizo un proyecto como este, compartiendo unas magníficas piezas en formatos STL y OpenSCAD del soporte de la Raspberry Pi 3A+ para el spectrum." />
+<meta property="og:description" content="Llevaba tiempo con ganas de hacer este proyecto. De hecho tenía todos los materiales comprados hacía tiempo pero lo fuí demorando porque aún no tenía nada claro como sujetar de un modo elegante y seguro la raspberry pi en el interior del Spectrum. Pero hace poco ví en Youtube varios vídeos de David programa y en uno de ellos se muestra como hizo un proyecto como este, compartiendo unas magníficas piezas en formatos STL y OpenSCAD del soporte de la Raspberry Pi 3A+ para el spectrum." />
+<meta property="og:site_name" content="José" />
+<meta property="og:image" content="/assets/images/sPictrum.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-02-13T00:00:00+01:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="/assets/images/sPictrum.jpg" />
+<meta property="twitter:title" content="Carcasa réplica Zx Spectrum + ZXBaremulator + Raspberry Pi 3A+" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo.svg"},"name":"jose"},"image":"/assets/images/sPictrum.jpg","author":{"@type":"Person","name":"jose"},"headline":"Carcasa réplica Zx Spectrum + ZXBaremulator + Raspberry Pi 3A+","dateModified":"2021-02-13T00:00:00+01:00","datePublished":"2021-02-13T00:00:00+01:00","description":"Llevaba tiempo con ganas de hacer este proyecto. De hecho tenía todos los materiales comprados hacía tiempo pero lo fuí demorando porque aún no tenía nada claro como sujetar de un modo elegante y seguro la raspberry pi en el interior del Spectrum. Pero hace poco ví en Youtube varios vídeos de David programa y en uno de ellos se muestra como hizo un proyecto como este, compartiendo unas magníficas piezas en formatos STL y OpenSCAD del soporte de la Raspberry Pi 3A+ para el spectrum.","url":"/sPictrum/","mainEntityOfPage":{"@type":"WebPage","@id":"/sPictrum/"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+<link href="/assets/css/prism.css" rel="stylesheet">
+
+<link href="/assets/css/theme.css" rel="stylesheet">
+
+<script src="/assets/js/jquery.min.js"></script>
+
+</head>
+
+
+
+
+<body>
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+		<link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</noscript>
+
+<!-- Begin Sidebar Navigation
+================================================== -->
+
+<div class="sidebar">    
+</div>   
+<div class="nav-icon">
+    <div class="hamburger-bar"></div>
+</div>
+<div id="blackover-nav" class="blackover"></div>
+<nav id="menu">
+    <ul>
+        <h3>Navigation</h3>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About <span class="badge badge-primary">Acerca de mí</span></a></li>
+            
+        <li><a href="/contact">Contacto</a></li>       
+    </ul>   
+</nav>
+
+<script src="/assets/js/lunr.js"></script>
+
+<style>
+    
+</style>
+
+<div class="wrap-search">
+    <div class="d-flex align-items-center ml-auto">
+        <i class="fas fa-search show-search"></i>
+        <form class="bd-search ml-3" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+            <input type="text" class="form-control bigradius text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+        </form>
+    </div>
+</div>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+
+
+<!-- End Sidebar Navigation
+================================================== -->
+
+<div class="site-content ">
+
+<div class="container">
+
+    <!-- Site Logo/Name
+    ================================================== -->
+   
+    <a class="navbar-brand" href="/">
+        <img src="/assets/images/logo.svg" alt="José">
+    </a>  
+   
+
+    <!-- Site Tag
+    ================================================== -->
+    
+
+    <!-- Content
+    ================================================== -->
+    <div class="main-content">
+        <div class="entry-header">
+    <!-- Post Title -->
+    <h1 class="posttitle">Carcasa réplica Zx Spectrum + ZXBaremulator + Raspberry Pi 3A+</h1>
+    <!-- Author & Date  Box -->
+    
+    
+    <div class="d-flex align-items-center mt-4">
+        <div>
+            
+            <img class="author-thumb" src="/assets/images/avatar.png" alt="José">
+            
+        </div>            
+        <div>
+        Written by <a target="_blank" class="text-dark" href="https://www.jose.ga">José</a> on 
+        <span class="post-date"><time class="post-date" datetime="2021-02-13">13 Feb 2021</time></span>           
+        
+        </div>            
+    </div>
+    
+</div>
+
+<!-- Adsense under title if enabled from _config.yml (change your pub id and slot) -->
+
+
+<!-- Featured Image -->
+
+<div class="entry-featured-image">
+    
+    <img class="featured-image " src="/assets/images/sPictrum.jpg" alt="Carcasa réplica Zx Spectrum + ZXBaremulator + Raspberry Pi 3A+">
+    
+</div>
+
+
+<!-- Content -->
+<!-- Post, Page Content
+================================================== -->
+<div class="article-post">
+    <!-- Toc if any -->
+    
+    <!-- End Toc -->
+    <p>Llevaba tiempo con ganas de hacer este proyecto. De hecho tenía todos los materiales comprados hacía tiempo pero lo fuí demorando porque aún no tenía nada claro como sujetar de un modo elegante y seguro la raspberry pi en el interior del Spectrum. Pero hace poco ví en Youtube varios vídeos de <a href="https://www.youtube.com/channel/UCygCiziBCszld6jqV0VZmLg">David programa</a> y en uno de <a href="https://www.youtube.com/watch?v=1dwUrC5ooDg">ellos</a> se muestra como hizo un proyecto como este, compartiendo unas magníficas piezas en formatos STL y OpenSCAD del soporte de la Raspberry Pi 3A+ para el spectrum.</p>
+
+<p><strong>¿De qué se trata?</strong></p>
+
+<p>De ejecutar el <a href="https://zxmini.speccy.org/es/index.html">emulador bare-metal ZXBareMulator</a>, creación de <strong>José Luis Sánchez</strong>, en una Raspberry Pi. Un programa bare-metal es aquel que no necesita cargar primero un sistema operativo para funcionar. La carga es instantánea y emula maravillosamente el ZX Spectrum 48K/128K/+2A.</p>
+
+<p>Haciendo uso de una carcasa de Spectrum 48K y teniendo su teclado operativo, conectando su membrana al GPIO de la RPi, la sensación que se tiene es la de tener entre las manos un verdadero gomas :) .</p>
+
+<p>Al final he montado una Raspberry Pi 3A+ dentro de la carcasa de un Spectrum, conectando la membrana del teclado al GPIO del RPi, para ejecutar el emulador bare-metal ZXBareMulator de <strong>José Luis Sánchez</strong> y tener un Spectrum con los juegos en la tarjeta de memoria y la posibilidad de conectar a un monitor por HDMI.</p>
+
+<p><strong>Pasos realizados en imagenes</strong></p>
+
+<p class="center"><img src="/assets/images/sPictrum2.jpg" alt="image" /></p>
+
+<p>Aquí podéis ver la carcasa réplica del gomas, la membrana, el teclado, la  chapa superior y los conectores de la membrana.
+Todos estos productos los compré en su día en <a href="http://retrocables.es">retocables.es</a></p>
+
+<p class="center"><img src="/assets/images/sPictrum3.jpg" alt="image" /></p>
+
+<p>Detalle de las piezas diseñadas por David para sujetar la RPi en la carcasa del Spectrum, impresas en 3D.</p>
+
+<p><strong>Fuente piezas:</strong> <a href="https://github.com/davidprograma/ytc/tree/master/16-ZxSPiCTRUM/SPiCTRUM-RPi-backplanes">https://github.com/davidprograma/ytc/tree/master/16-ZxSPiCTRUM/SPiCTRUM-RPi-backplanes</a></p>
+
+<p class="center center"><img src="/assets/images/SPiCTRUM-GPIO-8keyb5-Schematic.png" alt="image" />
+Esquema de conexionado. <strong>Fuente imagen:</strong> <a href="https://github.com/davidprograma">https://github.com/davidprograma</a></p>
+<p><img src="/assets/images/sPictrum4.jpg" alt="image" />
+Siguiendo el esquema de conexionado GPIO, que facilita David en su github, procedí a  conectar 5 pines GPIO al conector de 5 pines y 8 pines GPIO al conector de 8 pines con los diodos 1N4148, montando dos placas pequeñas y cableando.</p>
+
+<p class="center"><img src="/assets/images/sPictrum5.jpg" alt="image" /></p>
+
+<p>Posicionando todo en el interior de la carcasa.</p>
+
+<p class="center"><img src="/assets/images/sPictrum6.jpg" alt="image" /></p>
+
+<p>Conectadas las fajas de la membrana a sus correspondientes conectores. También le he conectado en el puerto USB una <strong>Magic-Ns</strong> ya que esta está soportada en <strong>ZXBareMulator</strong>, con lo que puedo hacer uso de una mando de PS4 :)</p>
+
+<p class="center"><img src="/assets/images/sPictrum7.jpg" alt="image" /></p>
+
+<p>Y finalmente cerramos la carcasa y ponemos todos los tornillos.</p>
+
+<p class="center"><img src="/assets/images/sPictrum8.jpg" alt="image" /></p>
+
+<p>La versión que uso de ZXBaremulator es la 3.2.</p>
+
+<p><strong>Características destacadas:</strong></p>
+
+<ul>
+  <li>Permite conectar un teclado real de Spectrum 48k, Spectrum+ o Spectrum 128K (pero no los +2a/+3) a la Raspberry PI vía GPIO.</li>
+  <li>Tiene soporte para el adaptador USB MAGIC-NS de Mayflash. Con él se pueden conectar un montón de mandos, tanto por cable como por Bluetooth. El adaptador debe estar en modo DirectInput (LED de color azul).</li>
+  <li>Se ha acelerado un poco el método de carga de las cintas virtuales.</li>
+</ul>
+
+<p>Me encanta como ha quedado!! todo funciona perfectamente.</p>
+
+<p><strong>Fuentes:</strong><br />
+<a href="https://zxmini.speccy.org/es/index.html">ZXBareMulator</a><br />
+<a href="https://www.youtube.com/channel/UCygCiziBCszld6jqV0VZmLg">YouTube David programa</a></p>
+
+
+</div>
+
+<!-- Rating -->
+
+
+<!-- Author Box if enabled from _config.yml -->
+<!-- Author Box -->
+
+
+
+
+<!-- Comments if not disabled with comments: false -->
+<!-- Comments
+================================================== -->
+ 
+<div class="comments">
+    <button class="btn btn-dark show-comments">Load Comments</button>         
+    <div id="comments">  
+        <h4 class="mb-4">Comments</h4>                 
+            <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = ''; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+     
+    <div class="clearfix"></div>              
+    </div>    
+</div>       
+
+
+<!-- Share -->
+<div class="share">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=Carcasa réplica Zx Spectrum + ZXBaremulator + Raspberry Pi 3A+&url=/sPictrum/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=/sPictrum/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=/sPictrum/" onclick="window.open(this.href, 'width=550,height=435');return false;">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+
+<!-- Related Post -->
+<!-- Related Posts
+================================================== -->
+<div class=" related-posts ">  
+
+    
+    <h2 class="text-center mb-4">Explore more like this</h2>
+    
+    
+    <div class="d-flex justify-content-center align-items-center">
+    
+    <!-- Categories -->
+    
+    
+    <a class="smoothscroll badge badge-primary text-capitalize" href="/categories#Retro">Retro</a>                
+    
+
+    <!-- Tags -->  
+    
+                    
+    <a class="smoothscroll badge badge-primary text-capitalize" href="/tags#ZX-Spectrum">ZX Spectrum</a>               
+    
+
+    </div>
+
+    
+    
+    
+    <div class="blog-grid-container">
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+            <!-- begin post -->
+
+
+<div class="blog-grid-item">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="/objeto-de-deseo/">
+                
+
+                    
+                        <img class="img-thumb" src="/assets/images/SegaMegadrive.jpg" alt="Objeto de deseo"> 
+                    
+
+                
+            </a>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="/objeto-de-deseo/">Objeto de deseo</a>
+                
+            </h2>
+            <h4 class="card-text">En la búsqueda de un regalo de cumpleaños para mi hermano y casi sin querer, me encontré a la venta en una tienda un juego antiguo para la videoconsola SEGA...</h4>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                
+                <img class="author-thumb" src="/assets/images/avatar.png" alt="José">
+                
+                </span>
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://www.jose.ga">José</a></span> 
+                
+                <span class="post-date">01 Sep 2014</span>
+                </span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+            
+            
+            
+        
+        
+        </div>        
+</div>
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+
+    </div>
+
+    
+    <!-- Newsletter
+    ================================================== -->
+    <div class="newsletter text-center">
+        <span class="h4"><img src="/assets/images/logo.svg" class="newsletter-logo" alt="José"> &nbsp; Blog <b>personal</b> en el que documento mis intereses</span>
+       <!-- <form action="" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
+         <!--   <div class="mc-field-group d-inline-flex">
+         <!--   <input type="email" placeholder="Your e-mail" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
+        <!--    <input type="submit" value="Subscribe" name="subscribe" class="heart">
+       <!--     </div>
+       <!-- </form>
+    </div>
+    
+    
+</div>
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 text-center text-lg-left">
+                Copyright © 2021 José 
+            </div>
+            <div class="col-md-6 col-sm-12 text-center text-lg-right">    
+                <a target="_blank" href="https://www.wowthemes.net/memoirs-free-jekyll-theme/">Memoirs Jekyll Theme</a> by WowThemes.net
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+
+<!-- Scripts (if you need bootstrap.js, please add it yourself. I didn't use it for performance reasons, it was not needed in this theme)
+================================================== -->
+
+<script src="/assets/js/prism.js"></script>
+
+<script src="/assets/js/theme.js"></script>
+
+
+
+
+<script id="dsq-count-scr" src="//.disqus.com/count.js"></script>
+
+
+</body>
+</html>
