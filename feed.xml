@@ -5,9 +5,61 @@
     <description>Pasión geek!</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 13 Feb 2021 22:17:56 +0100</pubDate>
-    <lastBuildDate>Sat, 13 Feb 2021 22:17:56 +0100</lastBuildDate>
+    <pubDate>Sun, 20 Feb 2022 15:56:39 +0100</pubDate>
+    <lastBuildDate>Sun, 20 Feb 2022 15:56:39 +0100</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Instalar NodeJs y NPM en MacOS</title>
+        <description>&lt;p&gt;Para instalar NodeJs y NPM en Mac necesitamos el gestor de paquetes Homebrew. Si no disponemos de él lo instalaremos escribiendo el siguiente código en la Terminal:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;/bin/bash -c “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Una vez dispongamos del Homebrew procedemos a instalar NodeJs y NPM    escribiendo en la Terminal lo siguiente:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;brew install node&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Para comprobar que todo ha ido bien y la versión instalada utilizaremos:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;node -v ó npm -v&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Más comandos …&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Para actualizar NodeJs:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;brew update&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;brew upgrade node&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Para desinstalar NodeJs&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;brew uninstall node&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Y esto es todo lo que quería contar :)&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 20 Feb 2022 00:00:00 +0100</pubDate>
+        <link>/instalar-node.js-y-npm-en-mac/</link>
+        <guid isPermaLink="true">/instalar-node.js-y-npm-en-mac/</guid>
+        
+        <category>Terminal</category>
+        
+        
+        <category>MacOS</category>
+        
+      </item>
     
       <item>
         <title>Carcasa réplica Zx Spectrum + ZXBaremulator + Raspberry Pi 3A+</title>
@@ -304,29 +356,6 @@ AcDisplay en &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.
         
         
         <category>Cocker</category>
-        
-      </item>
-    
-      <item>
-        <title>Disfrutando de un iPhone 6</title>
-        <description>&lt;p&gt;Es lo que tiene cumplir años, que de vez en cuando cae como regalo algo super especial. Y este ha sido ese año. Mi mujer me ha regalado un iPhone 6 de 4,7 pulgadas y 64 Gb de capacidad.&lt;/p&gt;
-
-&lt;p&gt;Tengo que decir que es una pasada de móvil. Realmente es muy delgado (0,69 cm) y lo de desbloquear el móvil con la huella dactilar funciona a la perfección. Ahora a disfrutarlo!&lt;/p&gt;
-
-&lt;p&gt;Os dejo unas instantáneas del mismo.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/iphone6_2.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/iphone6_3.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 26 Oct 2014 00:00:00 +0200</pubDate>
-        <link>/disfrutando-de-un-iphone-6/</link>
-        <guid isPermaLink="true">/disfrutando-de-un-iphone-6/</guid>
-        
-        <category>iPhone</category>
-        
-        
-        <category>Apple</category>
         
       </item>
     
