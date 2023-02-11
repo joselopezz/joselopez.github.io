@@ -5,8 +5,8 @@
     <description>Pasión geek!</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 20 Feb 2022 15:56:39 +0100</pubDate>
-    <lastBuildDate>Sun, 20 Feb 2022 15:56:39 +0100</lastBuildDate>
+    <pubDate>Fri, 10 Feb 2023 13:50:04 +0100</pubDate>
+    <lastBuildDate>Fri, 10 Feb 2023 13:50:04 +0100</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -17,7 +17,7 @@
   &lt;p&gt;/bin/bash -c “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)”&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Una vez dispongamos del Homebrew procedemos a instalar NodeJs y NPM    escribiendo en la Terminal lo siguiente:&lt;/p&gt;
+&lt;p&gt;Una vez dispongamos del Homebrew procedemos a instalar NodeJs y NPM escribiendo en la Terminal lo siguiente:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;brew install node&lt;/p&gt;
@@ -29,7 +29,7 @@
   &lt;p&gt;node -v ó npm -v&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;Más comandos …&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&quot;más-comandos-&quot;&gt;Más comandos …&lt;/h4&gt;
 
 &lt;p&gt;Para actualizar NodeJs:&lt;/p&gt;
 
@@ -48,11 +48,10 @@
 &lt;/blockquote&gt;
 
 &lt;p&gt;Y esto es todo lo que quería contar :)&lt;/p&gt;
-
 </description>
         <pubDate>Sun, 20 Feb 2022 00:00:00 +0100</pubDate>
-        <link>/instalar-node.js-y-npm-en-mac/</link>
-        <guid isPermaLink="true">/instalar-node.js-y-npm-en-mac/</guid>
+        <link>/instalar-node-js-y-npm-en-mac/</link>
+        <guid isPermaLink="true">/instalar-node-js-y-npm-en-mac/</guid>
         
         <category>Terminal</category>
         
@@ -63,7 +62,7 @@
     
       <item>
         <title>Carcasa réplica Zx Spectrum + ZXBaremulator + Raspberry Pi 3A+</title>
-        <description>&lt;p&gt;Llevaba tiempo con ganas de hacer este proyecto. De hecho tenía todos los materiales comprados hacía tiempo pero lo fuí demorando porque aún no tenía nada claro como sujetar de un modo elegante y seguro la raspberry pi en el interior del Spectrum. Pero hace poco ví en Youtube varios vídeos de &lt;a href=&quot;https://www.youtube.com/channel/UCygCiziBCszld6jqV0VZmLg&quot;&gt;David programa&lt;/a&gt; y en uno de &lt;a href=&quot;https://www.youtube.com/watch?v=1dwUrC5ooDg&quot;&gt;ellos&lt;/a&gt; se muestra como hizo un proyecto como este, compartiendo unas magníficas piezas en formatos STL y OpenSCAD del soporte de la Raspberry Pi 3A+ para el spectrum.&lt;/p&gt;
+        <description>&lt;p&gt;Llevaba tiempo con ganas de hacer este proyecto. De hecho tenía todos los materiales comprados hacía tiempo pero lo fuí demorando porque aún no tenía nada claro como sujetar de un modo elegante y seguro la raspberry pi en el interior del Spectrum. Pero hace poco ví en Youtube varios vídeos de &lt;a href=&quot;https://www.youtube.com/channel/UCygCiziBCszld6jqV0VZmLg&quot;&gt;David programa&lt;/a&gt; y en uno de &lt;a href=&quot;https://www.youtube.com/watch?v=1dwUrC5ooDg&quot;&gt;ellos&lt;/a&gt; se muestra como hizo un proyecto como este, compartiendo unas magníficas piezas en formatos STL y OpenSCAD del soporte de la Raspberry Pi 3A+ para el spectrum.&amp;lt;/p&amp;gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;¿De qué se trata?&lt;/strong&gt;&lt;/p&gt;
 
@@ -75,35 +74,38 @@
 
 &lt;p&gt;&lt;strong&gt;Pasos realizados en imagenes&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/sPictrum2.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/images/sPictrum2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Aquí podéis ver la carcasa réplica del gomas, la membrana, el teclado, la  chapa superior y los conectores de la membrana.
 Todos estos productos los compré en su día en &lt;a href=&quot;http://retrocables.es&quot;&gt;retocables.es&lt;/a&gt;&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/sPictrum3.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/images/sPictrum3.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Detalle de las piezas diseñadas por David para sujetar la RPi en la carcasa del Spectrum, impresas en 3D.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Fuente piezas:&lt;/strong&gt; &lt;a href=&quot;https://github.com/davidprograma/ytc/tree/master/16-ZxSPiCTRUM/SPiCTRUM-RPi-backplanes&quot;&gt;https://github.com/davidprograma/ytc/tree/master/16-ZxSPiCTRUM/SPiCTRUM-RPi-backplanes&lt;/a&gt;&lt;/p&gt;
 
-&lt;p class=&quot;center center&quot;&gt;&lt;img src=&quot;/assets/images/SPiCTRUM-GPIO-8keyb5-Schematic.png&quot; alt=&quot;image&quot; /&gt;
-Esquema de conexionado. &lt;strong&gt;Fuente imagen:&lt;/strong&gt; &lt;a href=&quot;https://github.com/davidprograma&quot;&gt;https://github.com/davidprograma&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/sPictrum4.jpg&quot; alt=&quot;image&quot; /&gt;
-Siguiendo el esquema de conexionado GPIO, que facilita David en su github, procedí a  conectar 5 pines GPIO al conector de 5 pines y 8 pines GPIO al conector de 8 pines con los diodos 1N4148, montando dos placas pequeñas y cableando.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/images/SPiCTRUM-GPIO-8keyb5-Schematic.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/sPictrum5.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Esquema de conexionado. &lt;strong&gt;Fuente imagen:&lt;/strong&gt; &lt;a href=&quot;https://github.com/davidprograma&quot;&gt;https://github.com/davidprograma&lt;/a&gt;&amp;lt;/p&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/sPictrum4.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Siguiendo el esquema de conexionado GPIO, que facilita David en su github, procedí a  conectar 5 pines GPIO al conector de 5 pines y 8 pines GPIO al conector de 8 pines con los diodos 1N4148, montando dos placas pequeñas y cableando.&amp;lt;/p&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/sPictrum5.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Posicionando todo en el interior de la carcasa.&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/sPictrum6.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/images/sPictrum6.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Conectadas las fajas de la membrana a sus correspondientes conectores. También le he conectado en el puerto USB una &lt;strong&gt;Magic-Ns&lt;/strong&gt; ya que esta está soportada en &lt;strong&gt;ZXBareMulator&lt;/strong&gt;, con lo que puedo hacer uso de una mando de PS4 :)&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/sPictrum7.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/images/sPictrum7.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Y finalmente cerramos la carcasa y ponemos todos los tornillos.&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/sPictrum8.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/images/sPictrum8.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;La versión que uso de ZXBaremulator es la 3.2.&lt;/p&gt;
 
@@ -119,14 +121,14 @@ Siguiendo el esquema de conexionado GPIO, que facilita David en su github, proce
 
 &lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;br /&gt;
 &lt;a href=&quot;https://zxmini.speccy.org/es/index.html&quot;&gt;ZXBareMulator&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://www.youtube.com/channel/UCygCiziBCszld6jqV0VZmLg&quot;&gt;YouTube David programa&lt;/a&gt;&lt;/p&gt;
-
+&lt;a href=&quot;https://www.youtube.com/channel/UCygCiziBCszld6jqV0VZmLg&quot;&gt;YouTube David programa&lt;/a&gt;
+&lt;/p&gt;
 </description>
         <pubDate>Sat, 13 Feb 2021 00:00:00 +0100</pubDate>
         <link>/sPictrum/</link>
         <guid isPermaLink="true">/sPictrum/</guid>
         
-        <category>ZX Spectrum</category>
+        <category>ZX-Spectrum</category>
         
         
         <category>Retro</category>
@@ -138,21 +140,31 @@ Siguiendo el esquema de conexionado GPIO, que facilita David en su github, proce
         <description>&lt;p&gt;He tenido la necesidad de formatear una Compact Flash en formato FAT16 y en esta líneas voy a plasmar los pasos que he seguido para hacerlo desde el sistema operativo Ubuntu.&lt;/p&gt;
 
 &lt;p&gt;Desde la Terminal y como root, instalar las utilidades para formatear.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;apt-get install dosfstools
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;apt-get install dosfstools
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;Después de conectar la CF en su lector y este al ordenador, averiguo la ubicación del dispositivo con el siguiente comando:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;df
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;df
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;Obtendré una salida similar a esta:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;tmpfs
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;tmpfs
 /dev/sda1 
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;Ahora procedemos a desmontar el volumen.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;umount /dev/sda1 
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;umount /dev/sda1 
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;Y finalmente formateamos el dispositivo con el siguiente comando:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;mkdosfs -v /dev/sda1 
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;mkdosfs -v /dev/sda1 
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;Y objetivo conseguido.&lt;/p&gt;
 
 </description>
@@ -167,40 +179,41 @@ Siguiendo el esquema de conexionado GPIO, que facilita David en su github, proce
     
       <item>
         <title>Instalación de Octoprint-TFT</title>
-        <description>&lt;p&gt;Octoprint-TFT es una interfaz táctil OctoPrint para módulos táctiles TFT basados en GTK + 3 que nos sirve para controlar nuestra impresora 3D.&lt;/p&gt;
-
-&lt;p&gt;Voy a explicar los pasos que he seguido para instalar Octoprint-TFT en una raspberry pi 2 y una pantalla tft de 3.5”. Partiendo del punto en el que ya tenemos instalado octoprint, con el SSH activado.&lt;/p&gt;
+        <description>&lt;p&gt;Octoprint-TFT es una interfaz táctil OctoPrint para módulos táctiles TFT basados en GTK + 3 que nos sirve para controlar nuestra impresora 3D.
+una pantalla tft de 3.5”. Partiendo del punto en el que ya tenemos instalado octoprint, con el SSH activado.&lt;/p&gt;
 
 &lt;p&gt;1) Instalación de drivers de la pantalla desde SSH:&lt;/p&gt;
 
 &lt;p&gt;Para que la pantalla funcione en la Rpi con nuestro octoprint, debemos conectarnos vía ssh a través del terminal de nuestro ordenador e introducir los siguientes comandos.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;wget https://www.waveshare.com/w/upload/1/1e/LCD-show-180817.tar.gz
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;wget https://www.waveshare.com/w/upload/1/1e/LCD-show-180817.tar.gz
 tar xvf LCD-show-180817.tar.gz
 cd LCD-show/
 chmod +x LCD35-show
 ./LCD35-show
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;La Rpi se reiniciara y nos aparecerá la consola por la pantalla.
-2) Instalacion de Octoprint-TFT&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;sudo apt-get update
+&lt;p&gt;La Rpi se reiniciara y nos aparecerá la consola por la pantalla. 2) Instalacion de Octoprint-TFT&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;sudo apt-get update
 sudo apt-get install xserver-xorg xinit libgtk-3-0 xserver-xorg-video-fbdev
 wget https://github.com/mcuadros/OctoPrint-TFT/releases/download/v0.1.2/octoprint-tft_0.1.2-1.stretch_armhf.deb
 sudo dpkg -i octoprint-tft_0.1.2-1.stretch_armhf.deb
 sudo mv /usr/share/X11/xorg.conf.d/99-fbturbo.conf ~
 sudo nano /lib/systemd/system/octoprint-tft.service
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;Cambiamos el valor 0 a 1 en esta linea:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;ExecStart=/usr/bin/xinit /usr/bin/OctoPrint-TFT -- :0 -nolisten tcp -nocursor
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;ExecStart=/usr/bin/xinit /usr/bin/OctoPrint-TFT -- :0 -nolisten tcp -nocursor
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;a&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;ExecStart=/usr/bin/xinit /usr/bin/OctoPrint-TFT -- :1 -nolisten tcp -nocursor
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;ExecStart=/usr/bin/xinit /usr/bin/OctoPrint-TFT -- :1 -nolisten tcp -nocursor
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Grabamos el archivo, pulsando CTRL+X y confirmamos tecleando Y, para guardarlo.
-Ya tendremos lista nuestra pantalla TFT con control táctil.&lt;/p&gt;
+&lt;p&gt;Grabamos el archivo, pulsando CTRL+X y confirmamos tecleando Y, para guardarlo. Ya tendremos lista nuestra pantalla TFT con control táctil.&lt;/p&gt;
 
 &lt;p&gt;Fuente: https://github.com/mcuadros/OctoPrint-TFT&lt;/p&gt;
+
 </description>
         <pubDate>Sat, 09 Feb 2019 00:00:00 +0100</pubDate>
         <link>/instalacion-de-octoprint-tft/</link>
@@ -217,30 +230,29 @@ Ya tendremos lista nuestra pantalla TFT con control táctil.&lt;/p&gt;
         <title>Instalar OctoPrint en una Raspberry Pi desde MacOs</title>
         <description>&lt;p&gt;Instalar el servidor de impresión 3D OctoPrint en una Raspberry Pi desde el entorno MacOs es muy fácil.&lt;/p&gt;
 
-&lt;p&gt;Primero de todo, descargaremos la última versión de Octoprint desde la &lt;a href=&quot;https://octoprint.org/download/&quot;&gt;web oficial&lt;/a&gt;. El fichero descargado viene comprimido en un zip. No es necesario descomprimirlo.&lt;/p&gt;
+&lt;p&gt;Primero de todo, descargaremos la última versión de Octoprint desde la web oficial. El fichero descargado viene comprimido en un zip. No es necesario descomprimirlo.&lt;/p&gt;
 
-&lt;p&gt;Para quemar la imagen usaremos el programa &lt;a href=&quot;https://etcher.io/&quot;&gt;Etcher&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Para quemar la imagen usaremos el programa Etcher.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/etcher.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/images/etcher.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Solo tenemos que seleccionar el archivo zip descargado, escoger la tarjeta SD que vamos a usar y a grabar. Una vez terminado debamos acceder a la tarjeta SD desde el terminal y editar con nano el archivo octopi-network.txt , donde configuraremos el bloque de configuración de seguridad inalámbrica con los datos de nuestra conexión.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;## WPA/WPA2 secured
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;## WPA/WPA2 secured
 #iface wlan0-octopi inet manual
 #    wpa-ssid “put SSID here”
 #    wpa-psk “put password here”
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;Para ello descomentamos las siguientes líneas y editamos con los datos de nuestra conexión Wifi&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;## WPA/WPA2 secured
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;## WPA/WPA2 secured
 iface wlan0-octopi inet manual
    wpa-ssid “put SSID here”
    wpa-psk “put password here”
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Grabamos y salimos. Ahora ya podemos colocar la tarjeta sd en nuestra Raspberry Pi y empezar a usar el servidor de impresión, accediendo a la dirección &lt;a href=&quot;http://octopi.local&quot;&gt;http://octopi.local&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Grabamos y salimos. Ahora ya podemos colocar la tarjeta sd en nuestra Raspberry Pi y empezar a usar el servidor de impresión, accediendo a la dirección &lt;a href=&quot;http://octopi.local/&quot;&gt;http://octopi.local&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/octopi.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/images/octopi.png&quot; alt=&quot;&quot; class=&quot;centered&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 11 Apr 2018 00:00:00 +0200</pubDate>
@@ -270,14 +282,17 @@ iface wlan0-octopi inet manual
     
       <item>
         <title>Probando AcDisplay</title>
-        <description>&lt;p&gt;He probado la app AcDisplay en mi Xiaomi MI 3 y me ha encantado su diseño que es agradable y minimalista. Esta app nos permite gestionar de un modo diferente las notificaciones en nuestro movil Android.&lt;/p&gt;
+        <description>&lt;p&gt;He probado la app AcDisplay en mi Xiaomi MI 3 y me ha encantado su diseño que es agradable y minimalista. Esta app nos permite gestionar de un modo diferente las notificaciones en nuestro movil Android.
+Las notificaciones que recibimos nos aparecen en la pantalla de bloqueo. Entre sus características están las de establecer horas de inactividad (ahorra batería), lista negra, etc.&lt;/p&gt;
 
-&lt;p&gt;Las notificaciones que recibimos nos aparecen en la pantalla de bloqueo. Entre sus características están las de establecer horas de inactividad (ahorra batería), lista negra, etc.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/images/AcDisplay2.png&quot; alt=&quot;&quot; class=&quot;centered&quot; /&gt;&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/AcDisplay2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/images/AcDisplay3.png&quot; alt=&quot;&quot; class=&quot;centered&quot; /&gt;&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/AcDisplay3.png&quot; alt=&quot;image&quot; /&gt;
-AcDisplay en &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.achep.acdisplay&amp;amp;hl=es&quot;&gt;Google Play&lt;/a&gt;&lt;/p&gt;
+&lt;center&gt;
+AcDisplay en &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.achep.acdisplay&amp;amp;hl=es&quot;&gt;Google Play&lt;/a&gt;
+&lt;/center&gt;
+
 </description>
         <pubDate>Fri, 23 Jan 2015 00:00:00 +0100</pubDate>
         <link>/probando-acdisplay/</link>
@@ -295,10 +310,12 @@ AcDisplay en &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.
         <description>&lt;p&gt;Ha salido una nueva versión de Ghost y queremos actualizar. ¿Qué tenemos que hacer? Pues muy fácil, primero descargaremos la última versión de &lt;a href=&quot;https://ghost.org/download/&quot;&gt;Ghost&lt;/a&gt; y la descomprimiremos. Después subimos el contenido al servidor donde tenemos alojado nuestro blog y sustituiremos los archivos. Lo único que no vamos a subir es la carpeta &lt;strong&gt;content&lt;/strong&gt;, que es la que posee el contenido de nuestro blog y el theme que usamos.&lt;/p&gt;
 
 &lt;p&gt;Después procedemos a instalarlo vía terminal,&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;npm install --production
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;npm install --production
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;y a arrancarlo.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;npm start
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;npm start
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Y ya tenemos el blog operativo y actualizado a la última versión.&lt;/p&gt;
 
@@ -319,17 +336,20 @@ AcDisplay en &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.
         <description>&lt;p&gt;Lo primero que haremos es dirigirnos a la web oficial &lt;a href=&quot;https://ghost.org/&quot;&gt;ghost.org&lt;/a&gt; y &lt;a href=&quot;https://ghost.org/download/&quot;&gt;descargar&lt;/a&gt; la versión más reciente. El archivo en cuestión se trata de un archivo comprimido que una vez descargado, descomprimiremos y lo pondremos, por ejemplo en la raíz del disco duro.&lt;/p&gt;
 
 &lt;p&gt;A través del terminal no dirigimos a esa ubicación.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;cd ghost
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Procederemos a instalarlo.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;npm install --production
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Después lo arrancaremos, ya en local.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-md&quot;&gt;npm start
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Nos indicará que ya está operativo en la dirección &lt;strong&gt;127.0.0.1:2368&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Lo primero que haremos será crear una cuenta de administrador (&lt;strong&gt;127.0.0.1:2368/admin&lt;/strong&gt;) y ya podemos empezar a bloguear en local …&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;cd ghost
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Procederemos a instalarlo.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;npm install --production
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Después lo arrancaremos, ya en local.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;npm start
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Nos indicará que ya está operativo en la dirección &lt;strong&gt;127.0.0.1:2368&lt;/strong&gt;
+Lo primero que haremos será crear una cuenta de administrador &lt;strong&gt;(127.0.0.1:2368/admin)&lt;/strong&gt; y ya podemos empezar a bloguear en local …&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 14 Dec 2014 00:00:00 +0100</pubDate>
@@ -346,9 +366,10 @@ AcDisplay en &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.
       <item>
         <title>Un nuevo componente en mi familia</title>
         <description>&lt;p&gt;Hoy llegó un nuevo componente para mi familia. Se trata de Koke un cocker spaniel de dos meses de edad y de color canela. Un cachorro super guapo y cariñoso que ya se ha ganado el cariño de tod@s nosotros.&lt;/p&gt;
+&lt;center&gt;
+&lt;blockquote class=&quot;instagram-media&quot; data-instgrm-captioned=&quot;&quot; data-instgrm-permalink=&quot;https://www.instagram.com/p/vQxNrgo-KH/?utm_source=ig_embed&amp;amp;utm_campaign=loading&quot; data-instgrm-version=&quot;14&quot; style=&quot; background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);&quot;&gt;&lt;div style=&quot;padding:16px;&quot;&gt; &lt;a href=&quot;https://www.instagram.com/p/vQxNrgo-KH/?utm_source=ig_embed&amp;amp;utm_campaign=loading&quot; style=&quot; background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;&quot; target=&quot;_blank&quot;&gt; &lt;div style=&quot; display: flex; flex-direction: row; align-items: center;&quot;&gt; &lt;div style=&quot;background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;display: flex; flex-direction: column; flex-grow: 1; justify-content: center;&quot;&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;padding: 19% 0;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;display:block; height:50px; margin:0 auto 12px; width:50px;&quot;&gt;&lt;svg width=&quot;50px&quot; height=&quot;50px&quot; viewBox=&quot;0 0 60 60&quot; version=&quot;1.1&quot; xmlns=&quot;https://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;https://www.w3.org/1999/xlink&quot;&gt;&lt;g stroke=&quot;none&quot; stroke-width=&quot;1&quot; fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;&lt;g transform=&quot;translate(-511.000000, -20.000000)&quot; fill=&quot;#000000&quot;&gt;&lt;g&gt;&lt;path d=&quot;M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/div&gt;&lt;div style=&quot;padding-top: 8px;&quot;&gt; &lt;div style=&quot; color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;&quot;&gt;Ver esta publicación en Instagram&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;padding: 12.5% 0;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;&quot;&gt;&lt;div&gt; &lt;div style=&quot;background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);&quot;&gt;&lt;/div&gt; &lt;div style=&quot;background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;margin-left: 8px;&quot;&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot; width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;margin-left: auto;&quot;&gt; &lt;div style=&quot; width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);&quot;&gt;&lt;/div&gt; &lt;div style=&quot; background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);&quot;&gt;&lt;/div&gt; &lt;div style=&quot; width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt; &lt;div style=&quot;display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;&quot;&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/a&gt;&lt;p style=&quot; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;&quot;&gt;&lt;a href=&quot;https://www.instagram.com/p/vQxNrgo-KH/?utm_source=ig_embed&amp;amp;utm_campaign=loading&quot; style=&quot; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;&quot; target=&quot;_blank&quot;&gt;Una publicación compartida de José (@jose.ga)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt; &lt;script async=&quot;&quot; src=&quot;//www.instagram.com/embed.js&quot;&gt;&lt;/script&gt;
+&lt;/center&gt;
 
-&lt;p&gt;&lt;blockquote class=&quot;instagram-media&quot; data-instgrm-captioned=&quot;&quot; data-instgrm-version=&quot;4&quot; style=&quot; background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);&quot;&gt;&lt;div style=&quot;padding:8px;&quot;&gt; &lt;div style=&quot; background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;&quot;&gt; &lt;div style=&quot; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;&quot;&gt;&lt;/div&gt;&lt;/div&gt; &lt;p style=&quot; margin:8px 0 0 0; padding:0 4px;&quot;&gt; &lt;a href=&quot;https://instagram.com/p/vQxNrgo-KH/&quot; style=&quot; color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;&quot; target=&quot;_top&quot;&gt;Un nuevo componente de mi familia :)&lt;/a&gt;&lt;/p&gt; &lt;p style=&quot; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;&quot;&gt;Una foto publicada por José (@jose.ga) on &lt;time style=&quot; font-family:Arial,sans-serif; font-size:14px; line-height:17px;&quot; datetime=&quot;2014-11-11T14:00:26+00:00&quot;&gt;Nov 11, 2014 at 6:00 PST&lt;/time&gt;&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;script async=&quot;&quot; defer=&quot;&quot; src=&quot;http://platform.instagram.com/en_US/embeds.js&quot;&gt;&lt;/script&gt; &lt;br /&gt;
-&lt;center&gt;Koke en su cama&lt;/center&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 12 Nov 2014 00:00:00 +0100</pubDate>
         <link>/un-nuevo-componente-en-mi-familia/</link>

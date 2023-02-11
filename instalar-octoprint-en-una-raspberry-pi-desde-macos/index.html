@@ -24,7 +24,7 @@
 <meta property="twitter:image" content="/assets/images/octoprint.png" />
 <meta property="twitter:title" content="Instalar OctoPrint en una Raspberry Pi desde MacOs" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo.svg"},"name":"jose"},"image":"/assets/images/octoprint.png","author":{"@type":"Person","name":"jose"},"headline":"Instalar OctoPrint en una Raspberry Pi desde MacOs","dateModified":"2018-04-11T00:00:00+02:00","datePublished":"2018-04-11T00:00:00+02:00","description":"Instalar el servidor de impresión 3D OctoPrint en una Raspberry Pi desde el entorno MacOs es muy fácil.","url":"/instalar-octoprint-en-una-raspberry-pi-desde-macos/","mainEntityOfPage":{"@type":"WebPage","@id":"/instalar-octoprint-en-una-raspberry-pi-desde-macos/"},"@context":"https://schema.org"}</script>
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo.svg"},"name":"jose"},"@type":"BlogPosting","url":"/instalar-octoprint-en-una-raspberry-pi-desde-macos/","image":"/assets/images/octoprint.png","headline":"Instalar OctoPrint en una Raspberry Pi desde MacOs","dateModified":"2018-04-11T00:00:00+02:00","datePublished":"2018-04-11T00:00:00+02:00","author":{"@type":"Person","name":"jose"},"mainEntityOfPage":{"@type":"WebPage","@id":"/instalar-octoprint-en-una-raspberry-pi-desde-macos/"},"description":"Instalar el servidor de impresión 3D OctoPrint en una Raspberry Pi desde el entorno MacOs es muy fácil.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -59,8 +59,7 @@
     <ul>
         <h3>Navigation</h3>
         <li><a href="/">Home</a></li>
-        <li><a href="/about">About <span class="badge badge-primary">Acerca de mí</span></a></li>
-            
+        <li><a href="/about">About <span class="badge badge-primary">Acerca de mí</span></a></li>     
         <li><a href="/contact">Contacto</a></li>       
     </ul>   
 </nav>
@@ -122,7 +121,7 @@
             
         </div>            
         <div>
-        Written by <a target="_blank" class="text-dark" href="https://www.jose.ga">José</a> on 
+        Written by José on 
         <span class="post-date"><time class="post-date" datetime="2018-04-11">11 Apr 2018</time></span>           
         
         </div>            
@@ -151,30 +150,29 @@
     <!-- End Toc -->
     <p>Instalar el servidor de impresión 3D OctoPrint en una Raspberry Pi desde el entorno MacOs es muy fácil.</p>
 
-<p>Primero de todo, descargaremos la última versión de Octoprint desde la <a href="https://octoprint.org/download/">web oficial</a>. El fichero descargado viene comprimido en un zip. No es necesario descomprimirlo.</p>
+<p>Primero de todo, descargaremos la última versión de Octoprint desde la web oficial. El fichero descargado viene comprimido en un zip. No es necesario descomprimirlo.</p>
 
-<p>Para quemar la imagen usaremos el programa <a href="https://etcher.io/">Etcher</a>.</p>
+<p>Para quemar la imagen usaremos el programa Etcher.</p>
 
-<p><img src="/assets/images/etcher.png" alt="image" /></p>
+<p><img src="../assets/images/etcher.png" alt="" /></p>
 
 <p>Solo tenemos que seleccionar el archivo zip descargado, escoger la tarjeta SD que vamos a usar y a grabar. Una vez terminado debamos acceder a la tarjeta SD desde el terminal y editar con nano el archivo octopi-network.txt , donde configuraremos el bloque de configuración de seguridad inalámbrica con los datos de nuestra conexión.</p>
 
-<pre><code class="language-md">## WPA/WPA2 secured
+<pre><code class="language-html">## WPA/WPA2 secured
 #iface wlan0-octopi inet manual
 #    wpa-ssid “put SSID here”
 #    wpa-psk “put password here”
 </code></pre>
-
 <p>Para ello descomentamos las siguientes líneas y editamos con los datos de nuestra conexión Wifi</p>
 
-<pre><code class="language-md">## WPA/WPA2 secured
+<pre><code class="language-html">## WPA/WPA2 secured
 iface wlan0-octopi inet manual
    wpa-ssid “put SSID here”
    wpa-psk “put password here”
 </code></pre>
-<p>Grabamos y salimos. Ahora ya podemos colocar la tarjeta sd en nuestra Raspberry Pi y empezar a usar el servidor de impresión, accediendo a la dirección <a href="http://octopi.local">http://octopi.local</a>.</p>
+<p>Grabamos y salimos. Ahora ya podemos colocar la tarjeta sd en nuestra Raspberry Pi y empezar a usar el servidor de impresión, accediendo a la dirección <a href="http://octopi.local/">http://octopi.local</a>.</p>
 
-<p class="center"><img src="/assets/images/octopi.png" alt="image" /></p>
+<p><img src="../assets/images/octopi.png" alt="" class="centered" /></p>
 
 
 </div>
@@ -186,14 +184,33 @@ iface wlan0-octopi inet manual
 <!-- Author Box -->
 
 
+<div class="authorbox mb-5 mt-5 pt-4 pb-4">   
+    <div class="row">
+        <div class="wrapavname col-md-3 text-center">
+            
+            <img  class="author-thumb" src="/assets/images/avatar.png" alt="José">
+            
+            <p class="mt-4 mb-0 small text-center">
+                <a target="_blank" class="d-inline-block mx-1 text-dark" href="https://www.jose.ga"><i class="fa fa-link"></i></a> 
+                <a target="_blank" class="d-inline-block mx-1 text-dark" href="https://twitter.com/joselopez_ga"><i class="fab fa-twitter"></i></a>
+                <a class="d-inline-block mx-1 text-dark" href="mailto:soy@jose.ga"><i class="fa fa-envelope"></i></a>
+            </p>
+        </div>
+        <div class="col-md-9">
+            <h4>José</h4>
+            <p class="mt-3 mb-0">Pasión por la informática, los diseños minimalistas, la programación, la electrónica y la impresión 3d.</p>
+        </div>
+    </div> 
+</div> 
+
 
 
 <!-- Comments if not disabled with comments: false -->
 <!-- Comments
 ================================================== -->
  
-<div class="comments">
-    <button class="btn btn-dark show-comments">Load Comments</button>         
+<div class="comments mt-5">
+    <button class="btn btn-outline-dark py-2 px-5 d-block w-100 show-comments"><i class="fa fa-comments text-muted"></i> &nbsp; Load Comments</button>         
     <div id="comments">  
         <h4 class="mb-4">Comments</h4>                 
             <section class="disqus">
@@ -330,7 +347,7 @@ iface wlan0-octopi inet manual
                 
                 <div class="mb-2 mt-2 font-weight-normal">
                 <div class="rating-holder">
-<div class="c-rating c-rating--regular" data-rating-value="4.5">
+<div class="c-rating c-rating--regular" data-rating-value="5">
   <button>1</button>
   <button>2</button>
   <button>3</button>
@@ -341,8 +358,7 @@ iface wlan0-octopi inet manual
                 </div>
                 
             </h2>
-            <h4 class="card-text">Octoprint-TFT es una interfaz táctil OctoPrint para módulos táctiles TFT basados en GTK + 3 que nos sirve para controlar nuestra impresora 3D.
-</h4>
+            <h4 class="card-text">Octoprint-TFT es una interfaz táctil OctoPrint para módulos táctiles TFT basados en GTK + 3 que nos sirve para controlar nuestra impresora 3D. una pantalla tft de 3.5”. Partiendo del...</h4>
         </div>
         <div class="card-footer bg-white">
             <div class="wrapfooter">
@@ -353,7 +369,7 @@ iface wlan0-octopi inet manual
                 
                 </span>
                 <span class="author-meta">
-                <span class="post-name"><a target="_blank" href="https://www.jose.ga">José</a></span> 
+                <span class="post-name font-weight-bold">José</span> 
                 
                 <span class="post-date">09 Feb 2019</span>
                 </span>
@@ -472,12 +488,7 @@ https://search.google.com/structured-data/testing-tool/u/0/
     ================================================== -->
     <div class="newsletter text-center">
         <span class="h4"><img src="/assets/images/logo.svg" class="newsletter-logo" alt="José"> &nbsp; Blog <b>personal</b> en el que documento mis intereses</span>
-       <!-- <form action="" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
-         <!--   <div class="mc-field-group d-inline-flex">
-         <!--   <input type="email" placeholder="Your e-mail" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
-        <!--    <input type="submit" value="Subscribe" name="subscribe" class="heart">
-       <!--     </div>
-       <!-- </form>
+     
     </div>
     
     
@@ -489,7 +500,7 @@ https://search.google.com/structured-data/testing-tool/u/0/
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-12 text-center text-lg-left">
-                Copyright © 2022 José 
+                Copyright © 2023 José 
             </div>
             <div class="col-md-6 col-sm-12 text-center text-lg-right">    
                 <a target="_blank" href="https://www.wowthemes.net/memoirs-free-jekyll-theme/">Memoirs Jekyll Theme</a> by WowThemes.net
