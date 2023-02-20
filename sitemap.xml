@@ -57,6 +57,10 @@
 <lastmod>2022-02-20T00:00:00+01:00</lastmod>
 </url>
 <url>
+<loc>/compilar-dosbox-x-en-trisquel/</loc>
+<lastmod>2023-02-20T00:00:00+01:00</lastmod>
+</url>
+<url>
 <loc>/about</loc>
 </url>
 <url>
@@ -106,6 +110,9 @@
 </url>
 <url>
 <loc>/category/macos/</loc>
+</url>
+<url>
+<loc>/category/linux/</loc>
 </url>
 <url>
 <loc>/page2/</loc>
