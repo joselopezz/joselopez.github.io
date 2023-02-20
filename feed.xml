@@ -5,13 +5,13 @@
     <description>Pasión geek!</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 20 Feb 2023 17:13:39 +0100</pubDate>
-    <lastBuildDate>Mon, 20 Feb 2023 17:13:39 +0100</lastBuildDate>
+    <pubDate>Mon, 20 Feb 2023 17:18:15 +0100</pubDate>
+    <lastBuildDate>Mon, 20 Feb 2023 17:18:15 +0100</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
         <title>Compilar DOSBox-X en Trisquel</title>
-        <description>&lt;p&gt;Paso realizados para compilar DOSBox-X (fork de DOSBox - emulador de MS-DOS) en Trisquel, por si le interesa a alguien …&lt;/p&gt;
+        <description>&lt;p&gt;Pasos realizados para compilar DOSBox-X (fork de DOSBox - emulador de MS-DOS) en Trisquel, por si le interesa a alguien …&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ d=&quot;/tmp/dosbox-x&quot;
 $ sudo apt update

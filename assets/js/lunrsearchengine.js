@@ -48,7 +48,7 @@ var documents = [{
     "id": 9,
     "url": "/compilar-dosbox-x-en-trisquel/",
     "title": "Compilar DOSBox-X en Trisquel",
-    "body": "2023/02/20 - Paso realizados para compilar DOSBox-X (fork de DOSBox - emulador de MS-DOS) en Trisquel, por si le interesa a alguien … $ d= /tmp/dosbox-x $ sudo apt update$ sudo apt install automake git gcc g++ make libncurses-dev nasm libsdl-net1. 2-dev libsdl2-net-dev libpcap-dev fluidsynth libfluidsynth-dev libavdevice58 libavformat-dev libavcodec-dev libavcodec-extra libavcodec-extra58 libswscale-dev libfreetype6-dev libxkbfile-dev libxrandr-dev -y$ git clone  https://github. com/joncampbell123/dosbox-x  $d$ cd $d$ bash build-debug-sdl2$ sudo make install"
+    "body": "2023/02/20 - Pasos realizados para compilar DOSBox-X (fork de DOSBox - emulador de MS-DOS) en Trisquel, por si le interesa a alguien … $ d= /tmp/dosbox-x $ sudo apt update$ sudo apt install automake git gcc g++ make libncurses-dev nasm libsdl-net1. 2-dev libsdl2-net-dev libpcap-dev fluidsynth libfluidsynth-dev libavdevice58 libavformat-dev libavcodec-dev libavcodec-extra libavcodec-extra58 libswscale-dev libfreetype6-dev libxkbfile-dev libxrandr-dev -y$ git clone  https://github. com/joncampbell123/dosbox-x  $d$ cd $d$ bash build-debug-sdl2$ sudo make install"
     }, {
     "id": 10,
     "url": "/instalar-node-js-y-npm-en-mac/",
